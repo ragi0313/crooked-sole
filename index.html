@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crooked Sole</title>
+  <link rel="shortcut icon" href="./logo.svg" type="image/svg+xml">
+  
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="overlay"></div>
+
+  <header> 
+    <div class="header-top" id="top">
+      <div class="container">
+        <ul class="header-socials-container">
+          <li>
+            <a href="https://www.facebook.com/CrookedSole" target="blank" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/crooked_sole" target="blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <div class="header-alert-news">
+          <p>WEEKEND FREE SHIPPING</p>
+        </div>
+
+        <div class="header-top-actions">
+            <div class="notifications">
+              <div class="notification-link">
+                <ion-icon name="notifications-outline"></ion-icon>
+                 <a href="#">Notifications</a>
+                 <div class="notifications_dd">   
+                  <img src="./assets/img/notif-user.png" alt="">
+                  <span>Log in to view notifications</span>
+                    <div class="login-links">
+                      <a href="#">Sign Up</a>
+                      <a href="">Sign In</a>
+                    </div>
+                 </div>
+              </div> 
+            </div>
+       
+
+          <select name="currency" id="">
+            <option value="php">PHP ₱</option>
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">EUR &euro;</option>
+          </select>
+          <select name="language">
+            <option value="ph">Filipino</option>
+            <option value="en-US">English</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-main">
+      <div class="container">
+        <a href="#" class="header-logo">
+          <img src="./assets/img/logo.png" alt="Crooked SOle" width="250" height="50">
+        </a>
+        <div class="header-search-container">
+          <input type="search" name="search" class="search-field" placeholder="Search here">
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="header-user-actions">
+          <button class="profile-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+          <button class="wishlist-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+          <button class="bag-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">2</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <nav class="desktop-navigation-menu">
+      <div class="container">
+        <ul class="desktop-menu-category-list">
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">New & Featured</a>
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">New & Featured</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">New Arrivals</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Latest Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">20% Off Selected Iconic Styles</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Bestsellers</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Member Exclusive</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Last Sizes Available</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Top Kicks under ₱10,000</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Shop By Brand</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Nike</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Adidas</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Converse</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Crocs</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Sperry</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">New For Men</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Clothing</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Shop All New</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">New For Women</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Clothing</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Shop All New</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">New For Kids</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Clothing</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Shop All New</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Men</a>
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Featured</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">New Releases</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Bestsellers</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Member Exclusive</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Yeezy</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Running</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Jordan</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Last Sizes Available</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">All Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Casual</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Gym and Training</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Running</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Basketball</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Clogs</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Last Sizes Available</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Top picks under ₱10,000</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Clothing</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">All Clothing</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Tops & T-Shirts</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Shorts</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Hoodies</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Sweatshirts</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Adidas</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Shop By Brand</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Nike</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Adidas</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Converse</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Crocs</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Sperry</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Women</a>
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Featured</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">New Releases</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Bestsellers</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Member Exclusive</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Yeezy</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Retro Running</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Jordan</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Last Sizes Available</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Sale</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">All Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Casual</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Gym and Training</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Running</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Basketball</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Clogs</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Last Sizes Available</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Top picks under ₱10,000</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Clothing</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">All Clothing</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Performance Essentials</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Tops & T-Shirts</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Shorts</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Hoodies and Sweatshirts</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Modest Wear</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Pants and Leggings</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Shop By Brand</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Nike</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Adidas</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Converse</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Crocs</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Sperry</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Kids</a>
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Featured</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">New Sneakers</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Bestsellers</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Member Exclusive</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Yeezy</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Back to School</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Jordan</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Last Sizes Available</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Sale</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Boys' Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">All Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Older boys(7-14 years old)</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Younger boys(4-7 years old)</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Babies (0-4 years old)</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Casual</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Running</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Basketball</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Clogs and Slides</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Girls' Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">All Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Older girls(7-14 years old)</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Younger girls(4-7 years old)</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Babies (0-4 years old)</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Casual</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Running</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Basketball</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Clogs and Slides</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Clothing</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">All Clothing</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Performance Essentials</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Tops & T-Shirts</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Shorts</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Hoodies and Sweatshirts</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Modest Wear</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Pants and Leggings</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Kids By Age</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Older kids(7-14 years old)</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Younger kids(4-7 years old)</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Babies and Toddlers(0-4 years old)</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Sale</a>
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Shop by Discount</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Shop All Sale</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">20% Off and up</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">30% Off and up</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">40% Off and up</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Men's Sale</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Clothing</a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Women's Sale</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Clothing</a>
+                </li>
+              </ul>
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Kid's Sale</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Shoes</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Clothing</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Blog</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+      <button class="action-btn">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="bag-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+        <span class="count">2</span>
+      </button>
+
+      <button class="home-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="wishlist-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+        <span class="count">0</span>
+      </button>
+
+      <button class="products-btn">
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+    </div>
+
+    <nav class="mobile-navigation-menu has-scrollbar">
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+        <button class="menu-close-btn">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+        <li class="menu-category">
+          <button class="accordion-menu">
+            <p class="menu-title">New & Featured</p>
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list">
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">New & Featured</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shop By Brand</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">New For Men</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">New For Women</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">New For Kids</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-category">
+          <button class="accordion-menu">
+            <p class="menu-title">Men</p>
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list">
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Featured</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shoes</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Clothing</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shop by Brand</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-category">
+          <button class="accordion-menu">
+            <p class="menu-title">Women</p>
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list">
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Featured</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shoes</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Clothing</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shop by Brand</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-category">
+          <button class="accordion-menu">
+            <p class="menu-title">Kids</p>
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list">
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Featured</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Boys' Shoes</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Girls' Shoes</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Kids By Age</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-category">
+          <button class="accordion-menu">
+            <p class="menu-title">Sale</p>
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list">
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shop by Discount</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shop All Sale</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">20% Off and up</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">30% Off and up</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">40% Off and up</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Blog</a>
+        </li>
+      </ul>
+
+      <div class="menu-bottom">
+        <ul class="menu-category-list">
+          <li class="menu-category">
+            <button class="accordion-menu">
+              <p class="menu-title">Language</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+            <ul class="submenu-category-list">
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Filipino</a>
+              </li>
+            </ul>
+          </li>
+
+          
+        </ul>
+        
+        <ul class="menu-social-container">
+          <li>
+            <a href="https://www.facebook.com/CrookedSole" target="blank" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/crooked_sole" target="blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <!--Hero section-->
+      <section class="hero">
+       <div class="container">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/img//hero/hero-1.jpg" alt="" class="hero-img">
+                <div class="hero-content">
+                 <h2 class="hero-title">Save up to 70% On Selected Styles</h2>
+                 <p class="hero-text">Level up your look with these timeless kicks.</p>
+                 <a href="#" class="btn btn-secondary">
+                   <span>Shop Now</span>
+                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                 </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/hero/hero-2.jpg" alt="" class="hero-img">
+              
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/hero/hero-3.jpg" alt="" class="hero-img">
+                <div class="hero-content">
+                 <h2 class="hero-title">Nike Precision 6 Color Ways</h2>
+                 <p class="hero-text">New Releases & Iconic Styles</p>
+                 <a href="#" class="btn btn-primary">
+                   <span>Shop Now</span>
+                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                 </a>
+                </div>
+             </div>
+             <div class="swiper-slide">
+              <img src="./assets/img/hero/banner-4.jpg" alt="" class="hero-img">
+              <div class="hero-content">
+               <h2 class="hero-title" style="color: var(--white);">Sperry X Malbon Golf</h2>
+               <p class="hero-text" style="color: var(--white);">Everyday Luxury Essentials</p>
+               <a href="#" class="btn btn-primary">
+                 <span>Shop Now</span>
+                 <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+               </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/hero/hero-5.jpg" alt="" class="hero-img">
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+       </div>
+      </section>
+
+      <!--Offer section-->
+      <div class="offer">
+        <div class="container">
+          <ul class="offer-list">
+            <li class="offer-item">
+              <div class="list-item-icon">
+                <img src="./assets/img/icons/offer-icon-1.svg" alt="">
+              </div>
+
+              <div class="offer-content">
+                <p class="offer-item-title">Share & Earn</p>
+                <p class="offer-item-text">Up to 15% off</p>
+              </div>
+            </li>
+
+            <li class="offer-item">
+              <div class="list-item-icon">
+                <img src="./assets/img/icons/offer-icon-2.svg" alt="">
+              </div>
+
+              <div class="offer-content">
+                <p class="offer-item-title">Get ₱150 <span>Off</span></p>
+                <p class="offer-item-text">Your 1st order | CS</p>
+              </div>
+            </li>
+
+            <li class="offer-item">
+              <div class="list-item-icon">
+                <img src="./assets/img/icons/offer-icon-3.svg" alt="">
+              </div>
+
+              <div class="offer-content">
+                <p class="offer-item-title">15-day free returns</p>
+                <p class="offer-item-text">once per order</p>
+              </div>
+            </li>
+
+            <li class="offer-item">
+              <div class="list-item-icon">
+                <img src="./assets/img/icons/offer-icon-4.svg" alt="">
+              </div>
+
+              <div class="offer-content">
+                <p class="offer-item-title">Secure payment</p>
+                <p class="offer-item-text">on all purchases</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Category-->
+      <div class="category">
+        <div class="container">
+          <h2 class="category-heading">Shop by Category</h2>
+          <div class="grid-link">
+            <a href="#">View All</a>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div class="category-item-container">
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/img/icons/running-shoe.svg" alt="" width="76">
+              </div>
+                <h3 class="category-item-title">Running</h3>  
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/img/icons/sandals.svg" alt="" width="76">
+              </div>
+                <h3 class="category-item-title">Sandals</h3>  
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/img/icons/crocs.svg" alt="" width="76">
+              </div>
+                <h3 class="category-item-title">Clogs</h3>  
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/img/icons/boat.svg" alt="" width="66">
+              </div>
+                <h3 class="category-item-title">Boat</h3>  
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/img/icons/basketball.png" alt="" width="76">
+              </div>
+                <h3 class="category-item-title">Basketball</h3>  
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/img/icons/yeezy.png" alt="" width="76">
+              </div>
+                <h3 class="category-item-title">Casual</h3>  
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/img/icons/converse.png" alt="" width="76">
+              </div>
+                <h3 class="category-item-title">Sneakers</h3>  
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/img/icons/clothing.png" alt="" width="76">
+              </div>
+                <h3 class="category-item-title">Clothing</h3>  
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./assets/img/icons/bottom.png" alt="" width="76">
+              </div>
+                <h3 class="category-item-title">Bottoms</h3>  
+            </div>
+
+            
+
+          </div>
+        </div>
+      </div>
+
+
+      <!--Sale-->
+      <div class="sale-slider">  
+         <div class="container">
+          <h3 class="sale-slider-heading">F<i class="ri-flashlight-line"></i>ash Deals</h3> 
+          <div class="gallery-wrap">
+            <i class="ri-arrow-left-s-line" id="prevBtn"></i>
+            <div class="glider-contain">
+              <div class="glider">
+                <div class="sale-product-box">
+                  <span class="p-discount"><i class="ri-flashlight-fill"></i><br><b>-20</b>%</span>
+                  <div class="sale-img-container">
+                    <div class="s-img">
+                      <a href="#">
+                        <img src="./assets/img/sale/precision-panda.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="sale-text-box">
+                    <div class="p-brand"><span>Nike</span></div>
+                  <a href="#" class="p-title">Precision 6 Panda</a>
+                  <div class="p-price">
+                    <span class="current">₱3,995 <span class="before">₱4,999</span></span>
+                    <a href="#" class="p-cart-btn"><i class="ri-shopping-cart-2-line"></i></a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            
+              <div class="glider">
+              <div class="sale-product-box">
+                <span class="p-discount"><i class="ri-flashlight-fill"></i><br><b>-45</b>%</span>
+                <div class="sale-img-container">
+                  <div class="s-img">
+                    <a href="#">
+                      <img src="./assets/img/sale/jordan-1-high.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="sale-text-box">
+                  <div class="p-brand"><span>Nike</span></div>
+                  <a href="#" class="p-title">Jordan 1 High Bred</a>
+                  <div class="p-price">
+                    <span class="current">₱10,699 <span class="before">₱18,499</span></span>
+                    <a href="#" class="p-cart-btn"><i class="ri-shopping-cart-2-line"></i></a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            
+              <div class="glider">
+                <div class="sale-product-box">
+                  <span class="p-discount"><i class="ri-flashlight-fill"></i><br><b>-63</b>%</span>
+                  <div class="sale-img-container">
+                    <div class="s-img">
+                      <a href="#">
+                        <img src="./assets/img/sale/yeezy-sesame.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="sale-text-box">
+                    <div class="p-brand"><span>Adidas</span></div>
+                    <a href="#" class="p-title">Yeezy Boost 350 Sesame</a>
+                    <div class="p-price">
+                      <span class="current">₱6,000 <span class="before">₱16,000</span></span>
+                      <a href="#" class="p-cart-btn"><i class="ri-shopping-cart-2-line"></i></a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            
+              <div class="glider">
+                <div class="sale-product-box">
+                  <span class="p-discount"><i class="ri-flashlight-fill"></i><br><b>-83</b>%</span>
+                  <div class="sale-img-container">
+                    <div class="s-img">
+                      <a href="#">
+                        <img src="./assets/img/sale/converse-cdg.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="sale-text-box">
+                    <div class="p-brand"><span>Converse</span></div>
+                    <a href="#" class="p-title">Converse High CDG</a>
+                    <div class="p-price">
+                      <span class="current">₱1,999 <span class="before">₱11,500</span></span>
+                      <a href="#" class="p-cart-btn"><i class="ri-shopping-cart-2-line"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="glider">
+                <div class="sale-product-box">
+                  <span class="p-discount"><i class="ri-flashlight-fill"></i><br><b>-20</b>%</span>
+                  <div class="sale-img-container">
+                    <div class="s-img">
+                      <a href="#">
+                        <img src="./assets/img/sale/precision-team-red.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="sale-text-box">
+                  <div class="p-brand"><span>Nike</span></div>
+                  <a href="#" class="p-title">Precision 6 Team Red</a>
+                  <div class="p-price">
+                    <span class="current">₱3,995 <span class="before">₱4,999</span></span>
+                    <a href="#" class="p-cart-btn"><i class="ri-shopping-cart-2-line"></i></a>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="glider">
+                <div class="sale-product-box">
+                  <span class="p-discount"><i class="ri-flashlight-fill"></i><br><b>-25</b>%</span>
+                <div class="sale-img-container">
+                  <div class="s-img">
+                    <a href="#">
+                      <img src="./assets/img/sale/crocs-tide.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="sale-text-box">
+                  <div class="p-brand"><span>Crocs</span></div>
+                  <a href="#" class="p-title">Salehe Tide</a>
+                  <div class="p-price">
+                    <span class="current">₱8,799 <span class="before">₱9,950</span></span>
+                    <a href="#" class="p-cart-btn"><i class="ri-shopping-cart-2-line"></i></a>
+                  </div>
+                </div>
+              </div>
+              </div>          
+              <div class="glider">
+                <div class="sale-product-box">
+                  <span class="p-discount"><i class="ri-flashlight-fill"></i><br><b>-20</b>%</span>
+                  <div class="sale-img-container">
+                    <div class="s-img">
+                      <a href="#">
+                        <img src="./assets/img/sale/precision-midnight-navy.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="sale-text-box">
+                    <div class="p-brand"><span>Nike</span></div>
+                    <a href="#" class="p-title">Precision 6 Midnight Navy</a>
+                    <div class="p-price">
+                      <span class="current">₱3,995 <span class="before">₱4,999</span></span>
+                      <a href="#" class="p-cart-btn"><i class="ri-shopping-cart-2-line"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>                    
+            </div>
+            <i class="ri-arrow-right-s-line" id="nextBtn"></i>
+          </div>
+        </div>
+      </div>
+
+      
+      <!--New Arrival-->
+      <section class="new-arrivals">
+        <div class="container">
+          <h2 class="new-arrivals-heading">#NewArrivals</h2>
+          <div class="img-container">
+            <a href="#">
+              <img src="./assets/img/new-arrivals-1.jpg" alt="" class="arrival-image-swap" width="370" height="300">
+                <img src="./assets/img/new-arrivals-banner.jpg" alt="" class="new-arrivals-banner" width="400" height="300">
+              </a>
+            </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <div class="products-heading">
+            <h2><span class="circle"></span><span>Top Products</span></h2>
+          </div>
+          <div class="wrapper">
+            <div class="slider">
+              <div class="list">
+                  <div class="item">
+                      <img src="./assets/img/product-banner-1.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="./assets/img/product-banner-2.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="./assets/img/product-banner-3.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="./assets/img/product-banner-4.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="./assets/img/product-banner-5.jpg" alt="">
+                  </div>
+              </div>
+              <div class="buttons">
+                  <button id="prev"><</button>
+                  <button id="next">></button>
+              </div>
+              <ul class="dots">
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              </ul>
+            </div>
+            <div class="grid">
+              <div class="grid-link">
+                <a href="#">View All</a>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+              <div class="swiper-containe1">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-1.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Adidas Gazelle</a>
+                              <div class="p-price">
+                              <span class="current">₱4,000<span class="before">-23%</span></span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-2.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Nike Dunk Low</a>
+                              <div class="p-price">
+                              <span class="current">₱3,000<span class="before">-30%</span></span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-3.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Jordan 1 High Bred</a>
+                              <div class="p-price">
+                              <span class="current">₱10,699<span class="before">-53%</span></span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-4.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Salehe Black Sasquatch</a>
+                              <div class="p-price">
+                              <span class="current">₱9,499</span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Converse High CDG</a>
+                              <div class="p-price">
+                              <span class="current">₱1,999<span class="before">-83%</span></span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-6.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Yeezy 500 Soft Vision</a>
+                              <div class="p-price">
+                              <span class="current">₱7,499<span class="before">-30%</span></span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-7.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Jordan 1 Tatum</a>
+                              <div class="p-price">
+                              <span class="current">₱6,250</span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-8.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Sperry Gold Cup</a>
+                              <div class="p-price">
+                              <span class="current">₱2,495</span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                  </div>
+              </div>
+            
+        
+              <div class="swiper-containe2">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-9.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Nike Dunk Low Phantom</a>
+                              <div class="p-price">
+                              <span class="current">₱3,999</span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-10.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Sperry Goldcup Topsider</a>
+                              <div class="p-price">
+                              <span class="current">₱2,350</span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-11.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Jordan 4 a Ma Maniere</a>
+                              <div class="p-price">
+                              <span class="current">₱30,199</span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-12.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Jordan 1 High AMM</a>
+                              <div class="p-price">
+                              <span class="current">₱17,999</span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-13.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Yeezy Boost 350 V2 Slate</a>
+                              <div class="p-price">
+                              <span class="current">₱17,999<span class="before">-50%</span></span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-14.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Crocs X Staple</a>
+                              <div class="p-price">
+                              <span class="current">₱6,490</span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-15.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Steal Yeezy 700 MNVM</a>
+                              <div class="p-price">
+                              <span class="current">₱7,499<span class="before">-50%</span></span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="product-swiper-slide">
+                        <div class="sale-product-box">
+                         
+                          <div class="sale-img-container">
+                             <div class="s-img">
+                                <a href="#">
+                                <img src="./assets/img/products/product-16.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="sale-text-box">
+                              <a href="#" class="p-title">Jordan 1 High Defiant</a>
+                              <div class="p-price">
+                              <span class="current">₱3,500<span class="before">-65%</span></span>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Blog-->
+      <section class="blog">
+        <div class="container">
+          <h2 class="blog-heading">Latest Blog</h2>
+          <ul class="blog-list">
+            <li>
+              <div class="blog-card">
+                <figure class="blog-banner">
+                  <img src="./assets/img/blog-1.jpg" width="1020" height="720" alt=""  class="image-contain">
+                </figure>
+                <div class="blog-content">
+                  <ul class="blog-meta-list">
+                    <li class="blog-meta-item">
+                      <ion-icon name="folder-open-outline"></ion-icon>
+                      <a href="#" class="blog-meta-link">Shoes</a>
+                    </li>
+                    <li class="blog-meta-item">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <a href="#" class="blog-meta-link">
+                        <time datetime="2023-09-26">26 Sept 2023</time>
+                      </a>
+                    </li>
+                  </ul>
+                  <h3 class="blog-title">
+                    <a href="#">Worthy Cyber Monday From Crooked Sole</a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="blog-card">
+                <figure class="blog-banner">
+                  <img src="./assets/img/blog-2.jpg" width="1020" height="720" alt="" class="image-contain">
+                </figure>
+                <div class="blog-content">
+                  <ul class="blog-meta-list">
+                    <li class="blog-meta-item">
+                      <ion-icon name="folder-open-outline"></ion-icon>
+                      <a href="#" class="blog-meta-link">Shoes</a>
+                    </li>
+                    <li class="blog-meta-item">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <a href="#" class="blog-meta-link">
+                        <time datetime="2023-09-26">26 Sept 2023</time>
+                      </a>
+                    </li>
+                  </ul>
+                  <h3 class="blog-title">
+                    <a href="#">The Most Iconic Air Jordan Sneakers</a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+                <figure class="blog-banner">
+                  <img src="./assets/img/blog-3.jpg" width="1020" height="720" alt="" class="image-contain">
+                </figure>
+                <div class="blog-content">
+                  <ul class="blog-meta-list">
+                    <li class="blog-meta-item">
+                      <ion-icon name="folder-open-outline"></ion-icon>
+                      <a href="#" class="blog-meta-link">Clogs</a>
+                    </li>
+                    <li class="blog-meta-item">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <a href="#" class="blog-meta-link">
+                        <time datetime="2023-09-26">26 Sept 2023</time>
+                      </a>
+                    </li>
+                  </ul>
+                  <h3 class="blog-title">
+                    <a href="#">Are Crocs Cool Now?</a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+
+   
+
+     
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Company Info</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">About Crooked Sole</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Footwear Blog</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Sustainability</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Careers</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Help & Support</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Shipping Info</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Returns</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Refund</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">How To Order</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">How To Track</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Size Guide</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Customer Care</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Payment Method</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Bonus Point</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+        </ul>
+  
+        <div class="footer-list">
+          <p class="socials-title">Find us on</p>
+          <ul class="socials-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <p class="newsletter-title">Newsletter</p>
+          <p class="newsletter-text">Sign up for crooked sole news</p>
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Your Email Address" class="email-field" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="payment-text">We Accept</p>
+          <img src="./assets/img/pay.png" width="300" height="28" alt="">
+        </div>
+      </div>
+      <div class="footer-bottom">
+          <div class="copyright">
+            <p> &copy; 2023 Crooked Sole | All Rights Reserved |</p>
+            <ion-icon name="location"></ion-icon>
+            <p>Philippines</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-top active" aria-label="back to top">
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
