@@ -1,4 +1,4 @@
-import { heroSlideData, saleData, productSideBannerImages, gridProducts } from "./productData.js";
+import { heroSlideData, saleData, productSideBannerImages, gridProducts } from "./landingProductData.js";
 
 
 $(function () {
@@ -46,8 +46,8 @@ $(function () {
                <img src="${item.imgSrc}" alt="Product Banner" class="hero-img">
                ${item.title ? `
                  <div class="hero-content">
-                   <h2 class="hero-title" style="color: ${item.titleColor || 'inherit'}">${item.title}</h2>
-                   <p class="hero-text" style="color: ${item.textColor || 'inherit'}">${item.text}</p>
+                   <h2 class="hero-title" style="color: ${item.titleColor}">${item.title}</h2>
+                   <p class="hero-text" style="color: ${item.textColor}">${item.text}</p>
                    <a href="shop.html" class="btn ${item.buttonClass || ''}">
                      <span>Shop Now</span>
                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
