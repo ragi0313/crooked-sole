@@ -1,7 +1,3 @@
-
-
-
-
 const mobileMenuClose = function () {
    $(".mobile-navigation-menu").removeClass("active");
    $(".overlay").removeClass("active");
@@ -31,6 +27,7 @@ $(".accordion-menu").each(function () {
      $(this).toggleClass('active');
    });
  });
+
 
  async function fetchProductDetails(productId) {
    const response = await fetch('../shopProductData.json');
@@ -183,19 +180,24 @@ $(".accordion-menu").each(function () {
 
 displayProductDetails();
 
-var currentIndex = 0;
+
 var images = $('.side-img-prev');
-var totalImages = images.length;
+
+let currentIndex = 0;
+
 
 $(document).on('mouseenter', '.side-img-prev', function () {
   $('#showImg img').attr('src', $(this).attr('src'));
 });
 
-// $(document).on('click', '#back, #next', function () {
-//   currentIndex = (currentIndex + (this.id === 'back' ? -1 : 1) + totalImages) % totalImages;
-//   $('#showImg img').attr('src', images.eq(currentIndex).attr('src'));
-//   console.log('Clicked on navigation button. Current Index:', currentIndex);
-// });
+$(document).on('click', '#back, #next', function () {
+  let totalImages = $('.side-img-prev').length;
+
+  if (totalImages > 0) {
+    currentIndex = (currentIndex + ($(this).attr('id') === 'back' ? -1 : 1) + totalImages) % totalImages;
+    $('#showImg img').attr('src', $('.side-img-prev').eq(currentIndex).attr('src'));
+  }
+});
 
 $(document).on('click', '.product-dropdown', function () {
   $(this).toggleClass('active');
