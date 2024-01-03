@@ -66,21 +66,21 @@
         <ion-icon name="cart-outline"></ion-icon>
         <span class="count">2</span>
       </button>
-      <button class="cart-btn">
-        <ion-icon name="cart-outline"></ion-icon>
-        <span class="count">2</span>
-      </button>
 
-
-  
+      
       <button class="wishlist-btn">
         <ion-icon name="heart-outline"></ion-icon>
         <span class="count">0</span>
       </button>
       
-      <button class="home-btn">
-        <ion-icon name="home-outline"></ion-icon>
+      <button class="notifications-btn">
+        <ion-icon name="person-outline"></ion-icon>
       </button>
+      <a href="index.html">
+        <button class="home-btn">
+          <ion-icon name="home-outline"></ion-icon>
+        </button>
+      </a>
     </div>
 
     <nav class="mobile-sidebar has-scrollbar">
@@ -88,10 +88,9 @@
         <h3>Filter</h3>
         <ion-icon name="close-outline" class="sidebar-close"></ion-icon>
       </div>
-      <div>
-        <h3 class="sidebar-title">Category</h3>
-      </div>
+     
   
+      <h2 class="sidebar-title">Category</h2>
       <div class="categories">
         <label class="sidebar-label-container">
           <input type="radio" name="category" value="all">
@@ -108,10 +107,6 @@
         <label class="sidebar-label-container">
           <input type="radio" name="category" value="clogs">
           <span class="checkmark"></span>Clogs
-        </label>
-        <label class="sidebar-label-container">
-          <input type="radio" name="category" value="boat">
-          <span class="checkmark"></span>Boat
         </label>
         <label class="sidebar-label-container">
           <input type="radio" name="category" value="sports">
@@ -137,8 +132,8 @@
     
       </div>
   
+      <h2 class="sidebar-title">Price</h2>
       <div class="ml">
-        <h2 class="sidebar-title price-title">Price</h2>
         <label class="sidebar-label-container">
           <input type="radio" name="price" value="all">
           <span class="checkmark"></span>All
@@ -161,39 +156,63 @@
         </label>
       </div>
   
-      <div>
-        <h2 class="sidebar-title price-title">Colors</h2>
+      <h2 class="sidebar-title">Colors</h2>
+      <div class="colors">
         <label class="sidebar-label-container">
           <input type="radio" name="color" value="all">
-          <span class="checkmark"></span>All
+          <span class="circle" style="background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);">
+          </span>
+          <span>All</span>
         </label>
         <label class="sidebar-label-container">
-          <input type="radio" name="color" value="green">
-          <span class="checkmark"></span>Black
+          <input type="radio" name="color" value="black">
+          <span class="circle" style="background: #000"></span>
+          <span class="color-label">Black</span>
         </label>
         <label class="sidebar-label-container">
           <input type="radio" name="color" value="white">
-          <span class="checkmark"></span>White
+          <span class="circle" style="background: #fff; border: 1px solid var(--silver);"></span>
+          <span class="color-label">White</span>
+        </label>
+        <label class="sidebar-label-container">
+          <input type="radio" name="color" value="gray">
+          <span class="circle" style="background: #808080"></span>
+          <span class="color-label">Gray</span>
         </label>
         <label class="sidebar-label-container">
           <input type="radio" name="color" value="blue">
-          <span class="checkmark"></span>Blue
+          <span class="circle" style="background: #0000FF"></span>
+          <span class="color-label">Blue</span>
         </label>
         <label class="sidebar-label-container">
           <input type="radio" name="color" value="red">
-          <span class="checkmark"></span>Red
+          <span class="circle" style="background: #D32F2F"></span>
+          <span class="color-label">Red</span>
+        </label>
+        <label class="sidebar-label-container">
+          <input type="radio" name="color" value="orange">
+          <span class="circle" style="background: #FF5722"></span>
+          <span class="color-label">Orange</span>
         </label>
         <label class="sidebar-label-container">
           <input type="radio" name="color" value="green">
-          <span class="checkmark"></span>Green
+          <span class="circle" style="background: #27AE60"></span>
+          <span class="color-label">Green</span>
         </label>
         <label class="sidebar-label-container">
           <input type="radio" name="color" value="purple">
-          <span class="checkmark"></span>Purple
+          <span class="circle" style="background: #8E44AD"></span>
+          <span class="color-label">Purple</span>
+        </label>
+        <label class="sidebar-label-container">
+          <input type="radio" name="color" value="pink">
+          <span class="circle" style="background: #F48FB1"></span>
+          <span class="color-label">Pink</span>
         </label>
         <label class="sidebar-label-container">
           <input type="radio" name="color" value="yellow">
-          <span class="checkmark"></span>Yellow
+          <span class="circle" style="background: #FFCA28"></span>
+          <span class="color-label">Yellow</span>
         </label>
       </div>
     </nav>
@@ -203,57 +222,49 @@
     <div class="head-container">
       <h3>Filter</h3>
     </div>
-    <div>
-      <h3 class="sidebar-title">Category</h3>
-    </div>
 
+    <h2 class="sidebar-title">Category</h2>
     <div class="categories">
-      <label class="sidebar-label-container">
-        <input type="radio" name="category" value="all">
-        <span class="checkmark"></span>All
-      </label>
-      <label class="sidebar-label-container">
-        <input type="radio" name="category" value="running">
-        <span class="checkmark"></span>Running
-      </label>
-      <label class="sidebar-label-container">
-        <input type="radio" name="category" value="sandals">
-        <span class="checkmark"></span>Sandals
-      </label>
-      <label class="sidebar-label-container">
-        <input type="radio" name="category" value="clogs">
-        <span class="checkmark"></span>Clogs
-      </label>
-      <label class="sidebar-label-container">
-        <input type="radio" name="category" value="boat">
-        <span class="checkmark"></span>Boat
-      </label>
-      <label class="sidebar-label-container">
-        <input type="radio" name="category" value="sports">
-        <span class="checkmark"></span>Sports
-      </label>
-      <label class="sidebar-label-container">
-        <input type="radio" name="category" value="casual">
-        <span class="checkmark"></span>Casual
-      </label>
-      <label class="sidebar-label-container">
-        <input type="radio" name="category" value="sneakers">
-        <span class="checkmark"></span>Sneakers
-      </label>
-      <label class="sidebar-label-container">
-        <input type="radio" name="category" value="clothing">
-        <span class="checkmark"></span>Clothing
-      </label>
-      <label class="sidebar-label-container">
-        <input type="radio" name="category" value="pants">
-        <span class="checkmark"></span>Pants
-      </label>
-      
-  
+        <label class="sidebar-label-container">
+          <input type="radio" name="category" value="all">
+          <span class="checkmark"></span>All
+        </label>
+        <label class="sidebar-label-container">
+          <input type="radio" name="category" value="running">
+          <span class="checkmark"></span>Running
+        </label>
+        <label class="sidebar-label-container">
+          <input type="radio" name="category" value="sandals">
+          <span class="checkmark"></span>Sandals
+        </label>
+        <label class="sidebar-label-container">
+          <input type="radio" name="category" value="clogs">
+          <span class="checkmark"></span>Clogs
+        </label>
+        <label class="sidebar-label-container">
+          <input type="radio" name="category" value="sports">
+          <span class="checkmark"></span>Sports
+        </label>
+        <label class="sidebar-label-container">
+          <input type="radio" name="category" value="casual">
+          <span class="checkmark"></span>Casual
+        </label>
+        <label class="sidebar-label-container">
+          <input type="radio" name="category" value="sneakers">
+          <span class="checkmark"></span>Sneakers
+        </label>
+        <label class="sidebar-label-container">
+          <input type="radio" name="category" value="clothing">
+          <span class="checkmark"></span>Clothing
+        </label>
+        <label class="sidebar-label-container">
+          <input type="radio" name="category" value="pants">
+          <span class="checkmark"></span>Pants
+        </label>
     </div>
 
+    <h2 class="sidebar-title price-title">Price</h2>
     <div class="ml">
-      <h2 class="sidebar-title price-title">Price</h2>
       <label class="sidebar-label-container">
         <input type="radio" name="price" value="all">
         <span class="checkmark"></span>All
@@ -275,40 +286,64 @@
         <span class="checkmark"></span>Over ₱15000
       </label>
     </div>
-
-    <div>
-      <h2 class="sidebar-title price-title">Colors</h2>
+    
+    <h2 class="sidebar-title" style="padding-right: 150px;">Colors</h2>
+    <div class="colors">
       <label class="sidebar-label-container">
         <input type="radio" name="color" value="all">
-        <span class="checkmark"></span>All
+        <span class="circle" style="background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);">
+        </span>
+        <span>All</span>
       </label>
       <label class="sidebar-label-container">
         <input type="radio" name="color" value="black">
-        <span class="checkmark"></span>Black
+        <span class="circle" style="background: #000"></span>
+        <span class="color-label">Black</span>
       </label>
       <label class="sidebar-label-container">
         <input type="radio" name="color" value="white">
-        <span class="checkmark"></span>White
+        <span class="circle" style="background: #fff; border: 1px solid var(--silver);"></span>
+        <span class="color-label">White</span>
+      </label>
+      <label class="sidebar-label-container">
+        <input type="radio" name="color" value="gray">
+        <span class="circle" style="background: #808080"></span>
+        <span class="color-label">Gray</span>
       </label>
       <label class="sidebar-label-container">
         <input type="radio" name="color" value="blue">
-        <span class="checkmark"></span>Blue
+        <span class="circle" style="background: #0000FF"></span>
+        <span class="color-label">Blue</span>
       </label>
       <label class="sidebar-label-container">
         <input type="radio" name="color" value="red">
-        <span class="checkmark"></span>Red
+        <span class="circle" style="background: #D32F2F"></span>
+        <span class="color-label">Red</span>
+      </label>
+      <label class="sidebar-label-container">
+        <input type="radio" name="color" value="orange">
+        <span class="circle" style="background: #FF5722"></span>
+        <span class="color-label">Orange</span>
       </label>
       <label class="sidebar-label-container">
         <input type="radio" name="color" value="green">
-        <span class="checkmark"></span>Green
+        <span class="circle" style="background: #27AE60"></span>
+        <span class="color-label">Green</span>
       </label>
       <label class="sidebar-label-container">
         <input type="radio" name="color" value="purple">
-        <span class="checkmark"></span>Purple
+        <span class="circle" style="background: #8E44AD"></span>
+        <span class="color-label">Purple</span>
+      </label>
+      <label class="sidebar-label-container">
+        <input type="radio" name="color" value="pink">
+        <span class="circle" style="background: #F48FB1"></span>
+        <span class="color-label">Pink</span>
       </label>
       <label class="sidebar-label-container">
         <input type="radio" name="color" value="yellow">
-        <span class="checkmark"></span>Yellow
+        <span class="circle" style="background: #FFCA28"></span>
+        <span class="color-label">Yellow</span>
       </label>
     </div>
   </nav>
@@ -320,13 +355,12 @@
         <button class="r-btns" value="Nike">Nike</button>
         <button class="r-btns" value="Adidas">Adidas</button>
         <button class="r-btns" value="Converse">Converse</button>
-        <button class="r-btns" value="Sperry">Sperry</button>
+        <button class="r-btns" value="New Balance">New Balance</button>
         <button class="r-btns" value="Crocs">Crocs</button>
       </div>
     </div>
     <div class="product-container">
-     
-      
+    
     </div>
     </div>
   </div>
@@ -434,6 +468,7 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
   <script type="module" src="assets/js/shop.js"></script>
 </body>
 </html>

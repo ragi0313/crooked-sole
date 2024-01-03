@@ -141,10 +141,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   opacity: .8;
 }
 
-.flexwrap {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 
 /*-----------------------------------*\
@@ -153,10 +150,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .container { padding-inline: 15px; }
 
-.container__2 {
-  max-width: 1280px;
-  margin: 0 auto; padding: 0 15px;
-}
 
 
 .has-scrollbar { padding-bottom: 5px; }
@@ -199,7 +192,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .product-scrollbar::-webkit-scrollbar-button { width: calc(25% - 40px); }
 
 
-.btn {
+.btn, .btn-red, .btn-green {
   background: var(--background, var(--black));
   color: var(--color, var(--white));
   font-family: var(--ff-josefin-sans);
@@ -218,16 +211,14 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   --color: var(--black);
 }
 
-.btn-secondary:is(:hover, :focus) { --background: hsla(0, 0%, 0%, 0.1); }
+.btn-red { background: #a70000; }
 
-.image-contain {
-  width: 100%; height: 100%;
-  object-fit: contain;
-  object-position: center;
-  transition: var(--transition-2);
+.btn-green { 
+  background: #228B22;
+  border-color: transparent;
 }
 
-.w-100 { width: 100%; }
+.btn-secondary:is(:hover, :focus) { --background: hsla(0, 0%, 0%, 0.1); }
 
 
 
@@ -241,6 +232,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .header-main {
   border-bottom: 1px solid var(--cultured_2);
+  padding-block: 20px;
 }
 
 
@@ -291,7 +283,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .mobile-bottom-navigation .profile-btn,
 .mobile-bottom-navigation .cart-btn,
 .mobile-bottom-navigation .home-btn,
-.mobile-bottom-navigation .products-btn,
 .header-user-actions .profile-btn, 
 .header-user-actions .wishlist-btn,
 .header-user-actions .cart-btn {
@@ -347,67 +338,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .mobile-navigation-menu.active {
   visibility: visible;
   left: 0;
-}
-
-.icon-plus {
-  width: 50px;
-  height: 50px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  position: relative;
-}
-
-.icon-plus.w25 {
-  width: 25px;
-  height: 25px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.icon-plus.w25:after {
-  width: 18px;
-  height: 4px;
-  left: 4px;
-  top: 11px;
-}
-
-.icon-plus.w25:before {
-  width: 4px;
-  height: 18px;
-  left: 11px;
-  top: 4px;
-}
-
-
-
-.icon-plus.black {
-  background: var(--black);
-}
-
-.icon-plus:after,
-.icon-plus:before {
-  content: '';
-  position: absolute;
-  background: #FFF;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.icon-plus:after {
-  width: 25px;
-  height: 6px;
-  left: 11px;
-  top: 20px;
-}
-
-.icon-plus:before {
-  width: 6px;
-  height: 25px;
-  left: 20px;
-  top: 11px;
 }
 
 .menu-top {
@@ -532,7 +462,10 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
  * #HERO
 \*-----------------------------------*/
 
-.hero { margin: 30px 0; }
+.hero { 
+  margin: 30px 0;
+  cursor: grab;
+}
 
 .swiper-container {
   position: relative;
@@ -557,7 +490,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   width: 100%; height: 100%;
   object-fit: cover;
   object-position: left;
-  cursor: pointer;
 }
 
 .hero-content {
@@ -566,7 +498,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   bottom: 0; right: 25px; left: 25px;
   padding: 20px 25px;
   border-radius: var(--border-radius-md);
-  transform: translateY(-40%);
 }
 
 .hero-title {
@@ -586,7 +517,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 
-
 .hero .btn {
   font-size: var(--fs-10); 
   font-weight: 600;
@@ -596,6 +526,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   color: var(--white);
   background-color: var(--black);
 }
+
 
 .swiper-slide:last-of-type .hero-text { color: var(--white); }
 
@@ -925,7 +856,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .products-heading .circle { top: -5px; }
 
 .wrapper {
-  flex-wrap: wrap;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -1017,16 +947,17 @@ slider .buttons #prev { left: 0; }
 .product-swiper-slide {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
   width: 100%; height: 100%;
 }
 
-.products .sale-text-box .p-title { 
+
+.sale-text-box .p-title { 
   font-size: 15px; 
-  white-space: nowrap;
-  overflow: hidden;
+  max-width: 190px;
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .products .sale-text-box .p-price span { 
@@ -1171,6 +1102,11 @@ slider .buttons #prev { left: 0; }
 
 
 /*-----------------------------------*\
+ * #ABOUT CROOKED SOLE
+\*-----------------------------------*/
+
+
+/*-----------------------------------*\
  * #FOOTER
 \*-----------------------------------*/
 
@@ -1281,6 +1217,10 @@ slider .buttons #prev { left: 0; }
  * #MEDIA QUERIES
 \*-----------------------------------*/
 
+@media (min-width: 370px) {
+  .hero-content { transform: translateY(-40%); }
+}
+
 
 @media (min-width: 480px) {
   :root { --fs-1: 1.875rem; }
@@ -1349,7 +1289,7 @@ slider .buttons #prev { left: 0; }
   .header-top-actions ion-icon,
   .header-top-actions a { 
     font-size: var(--fs-8); 
-    color: var(--silver);
+    color: var(--black_90);
     cursor: pointer;
   }
 
@@ -1420,7 +1360,7 @@ slider .buttons #prev { left: 0; }
   }
 
 
-  .header-top-actions ion-icon:hover,
+  .header-top-actions i:hover,
   .header-top-actions a:hover {
     color: var(--black);
   }
@@ -1445,6 +1385,8 @@ slider .buttons #prev { left: 0; }
 
   /* HERO */
   .swiper-slide { aspect-ratio: 4 / 2; }
+
+  .swiper-slide:nth-child(1) .hero-text { color: var(--white); }
 
   .hero-content { background: none; }
 
@@ -1758,4 +1700,8 @@ slider .buttons #prev { left: 0; }
   .product-swiper-slide { width: 20%; height: 20%;}
 
   .slider { width: 25%; }
+
+  .product-images { transform: translateX(10%); }
+
+  .product-preview img { width: 80%; }
 }
