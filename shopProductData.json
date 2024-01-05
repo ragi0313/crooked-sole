@@ -1,5 +1,4 @@
 [
-  
     {
       "id": 1,
       "detailImg": [
@@ -21,7 +20,8 @@
       "description": "The Adidas Gazelle Green is a vibrant and stylish iteration of the iconic Gazelle sneaker, showcasing a refreshing shade of green that adds a pop of color to any ensemble. The upper is crafted from premium materials, providing a comfortable and durable fit. The classic three stripes on the sides and the trefoil logo on the heel maintain the brand's timeless aesthetic, while the rubber outsole ensures excellent traction and support.",
       "company": "Adidas",
       "color": "green",
-      "category": ["running", "casual", "sneakers"]
+      "category": ["running", "casual", "sneakers"],
+      "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
     },
   {
     "id": 2,
@@ -42,7 +42,8 @@
     "description": "The Nike Dunk Low Blue Whisper features a tranquil and understated color palette, with a soothing shade of blue dominating the upper. The premium suede and leather construction ensures a luxurious feel, while the iconic Dunk silhouette maintains a timeless and versatile appeal. Subtle branding and a clean white midsole complete the design, making these sneakers a tasteful addition to any sneaker enthusiast's collection.",
     "company": "Nike",
     "color": "blue",
-    "category": ["casual", "running", "basketball"]
+    "category": ["casual", "running", "basketball"],
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 3,
@@ -64,7 +65,8 @@
     "description": "The Nike Air Jordan 1 High Bred Patent combines the classic Bred colorway with a sleek and glossy patent leather construction, adding a modern and luxurious twist to the iconic silhouette. The upper showcases a mix of black and red patent leather panels, providing a bold and eye-catching aesthetic. With the signature wings logo on the ankle collar and a supportive Air-cushioned sole, these sneakers seamlessly blend heritage design with contemporary style for a standout addition to the Jordan 1 lineup.",
     "company": "Nike",
     "color": ["black", "red"],
-    "category": ["sneakers", "casual", "sports"]
+    "category": ["sneakers", "casual", "sports"],
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 4,
@@ -86,7 +88,8 @@
     "description": "Since its release, Crocs Pollex Clog by Salehe Bembury Sasquatch remains of the highest-selling variants in the Crocs catalog. The construction of Pollex Clog mainly utilizes croslite material. These Crocs come in an attractive sasquatch black colorway and feature a heel attached to the optional sport mode for great fitting. The upper part is perforated to enhance its breathability and allow the shedding of water and other particles, such as debris, from inside the Crocs.",
     "company": "Crocs",
     "color": "black",
-    "category": "clogs"
+    "category": "clogs",
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 5,
@@ -106,7 +109,8 @@
     "description": "The Chuck Taylor All-Star 70 High PLAY White is a stylish and iconic sneaker that combines classic design with a playful twist. Featuring the timeless high-top silhouette, these sneakers are adorned with the distinctive PLAY heart logo created by the renowned artist duo, Comme des Garçons. The crisp white canvas and bold red heart detail make these Chuck Taylors a fashion-forward choice for those who appreciate a blend of tradition and modern aesthetics.",
     "company": "Converse",
     "color": "white",
-    "category": "sneakers"
+    "category": "sneakers",
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 6,
@@ -127,7 +131,8 @@
     "description": "The YEEZY 500 Soft Vision features an upper composed of cow suede, premium leather and mesh. A rubber wrap along the midsole of the foot provides support and abrasion resistance with reflective piping details around the lace eyelets that add visibility in low-light conditions.",
     "company": "Adidas",
     "color": "Purple",
-    "category": ["sports", "sneakers", "running"]
+    "category": ["sports", "sneakers", "running"],
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 7,
@@ -152,7 +157,8 @@
     "description": "Everybody who knows me knows that my love for St. Louis runs deep … \" So deep that we made a special-edition colourway to celebrate Jay's hometown. The bold combo of red and white will make anyone from The Lou do a double-take. Fleur-de-lis designs on the heel and insole nod to the city's flag. And Archer Avenue? Well, that's where it all started for Jayson. Continue the journey by honouring his roots in the Tatum 1 'St. Louis'.",
     "company": "Nike",
     "color": "white",
-    "category": "sports"
+    "category": "sports",
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 8,
@@ -164,7 +170,7 @@
       "https://images.moresneakers.com/new-balance-550-sea-salt-burgundy-bb550li1-16246632390412.jpg"
     ],
     "img": "assets/img/products/product-8.jpg",
-    "title": "550 Burgundy Cyan",
+    "title": "New Balance 550 Burgundy Cyan",
     "star": 5,
     "reviews": 123,
     "discount": "-57%",
@@ -173,7 +179,8 @@
     "description": "The New Balance 550 Burgundy Cyan sneakers combine a rich burgundy hue with vibrant cyan accents, creating a stylish and eye-catching color palette. These sneakers feature a classic silhouette with a nod to retro basketball aesthetics, offering both timeless appeal and a modern edge. The premium materials used in construction ensure comfort and durability, making them a versatile choice for both casual and athletic wear.",
     "company": "New Balance",
     "color": ["white", "red"],
-    "category": ["sports", "sneakers"]
+    "category": ["sports", "sneakers"],
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 9,
@@ -197,7 +204,8 @@
     "description": "The Nike Dunk Low Next Nature 'Phantom Gold Suede' is a stylish and contemporary sneaker that seamlessly blends classic design with modern aesthetics. The shoe features a sophisticated color palette with a predominant Phantom Gold Suede upper, providing a luxurious and versatile look. The Next Nature collection emphasizes sustainability, incorporating eco-friendly materials and innovative design elements, making these Dunks not only fashionable but also environmentally conscious.",
     "company": "Nike",
     "color": "Yellow",
-    "category": "sneakers"
+    "category": "sneakers",
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 10,
@@ -217,7 +225,8 @@
     "description": "Add a vintage feel to your everyday looks with the New Balance 2002R 'Protection Pack - Mirage Grey. ' Drawing inspiration from the classic M1300JP, this lifestyle runner features a neutral palette of slate-colored mesh and light grey overlays in the forefoot, quarter panel and heel, making it perfect for any wardrobe.",
     "company": "New Balance",
     "color": "gray",
-    "category": "casual"
+    "category": "casual",
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 11,
@@ -239,7 +248,8 @@
     "company": "Nike",
     "description": "Once again partnering with James Whitner's A Ma Maniére, Jordan Brand brings you an AJ4 that's all about street culture, fashion and your personal journey to greatness. The Violet Ore upper (complete with colour-matched laces) gives a royal vibe, adding the essence of prestige to your 'fit. Sleek metallic pins, tonal mesh detailing and a quilted interior bring the luxury with every step. And check out the special edition label on the insole, legitimising your streetwear style. In other words—you've officially arrived.",
     "color": "purple",
-    "category": ["sports", "sneakers"]
+    "category": ["sports", "sneakers"],
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 12,
@@ -261,7 +271,8 @@
     "company": "Nike",
     "description": "The Air Jordan 1 x A Ma Maniére is a highly coveted collaboration between Jordan Brand and the upscale streetwear boutique A Ma Maniére. Released in 2020, this special edition sneaker features a premium construction with a mix of suede and leather in a neutral color palette, exuding luxury and sophistication. The collaboration showcases attention to detail, combining classic Jordan elements with A Ma Maniére's distinctive aesthetic, making it a standout addition to any sneaker enthusiast's collection.",
     "color": "gray",
-    "category": "sneakers"  
+    "category": "sneakers",
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 13,
@@ -282,7 +293,8 @@
     "company": "Adidas",
     "description": "The Adidas Yeezy Boost Sesame V2 is a popular sneaker designed in collaboration with Kanye West. Featuring a neutral Sesame colorway, the shoe boasts a Primeknit upper for a comfortable and flexible fit. The iconic Boost midsole provides responsive cushioning, making it a stylish and comfortable option for casual wear.",
     "color": "white",
-    "category": ["sneakers", "casual"]
+    "category": ["sneakers", "casual"],
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 14,
@@ -303,7 +315,8 @@
     "company": "Crocs",
     "description": "The Staple x Crocs All-Terrain Clog 'Homing Pigeon' reunites the partner brands on a rugged slip-on designed for city exploration. The black foam upper features a pivoting heel strap, a series of ventilation ports, and an open-mesh overlay that functions as a pouch, complete with toggle-cord closure atop the vamp.",
     "color": "black",
-    "category": "clogs"
+    "category": "clogs",
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 15,
@@ -324,7 +337,8 @@
     "company": "Adidas",
     "description": "The adidas Yeezy Boost 700 MNVN Honey Flux features a bright yellow neoprene upper with reflective 700 quarter detailing and black reinforced trimming. A black, sculptural Boost sole brings the maximized cushioning that Yeezy has been recognized for since their start in 2015.",
     "color": "yellow",
-    "category": ["casual", "running"]
+    "category": ["casual", "running"],
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 16,
@@ -344,7 +358,8 @@
     "company": "Nike",
     "description": "The Air Jordan 1 High Defiant is a unique and stylish iteration of the iconic Air Jordan 1 silhouette. Featuring a bold and mismatched color scheme, the Defiant model breaks away from traditional design norms, incorporating various contrasting panels and materials for a distinct look. With a nod to the rebellious spirit of streetwear culture, the Air Jordan 1 High Defiant combines heritage and innovation in a fashion-forward sneaker.",
     "color": "gray",
-    "category": ["sneakers", "basketball"]  
+    "category": ["sneakers", "basketball"],
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 17,
@@ -364,7 +379,8 @@
     "description": "The Adidas Yeezy Slide Ochre is a fashion-forward and comfortable footwear option designed by Kanye West. These slides feature a distinctive ochre colorway, offering a warm and earthy tone to elevate your casual style. Constructed with a lightweight foam compound, the Adidas Yeezy Slide Ochre ensures a cozy and practical choice for lounging or making a statement in your streetwear ensemble.",
     "company": "Adidas",
     "color": "yellow",
-    "category": "sandals"
+    "category": "sandals",
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 18,
@@ -384,7 +400,8 @@
     "company": "Converse",
     "description": "The Chuck 70 Mid Undefeated Seaspray is a stylish and contemporary sneaker collaboration between Converse and Undefeated. Featuring a mid-top silhouette, the shoe boasts a unique seaspray colorway that adds a distinct and eye-catching element to the classic Chuck 70 design. With Undefeated's signature touch, this iteration combines streetwear aesthetics with the timeless appeal of Converse's iconic Chuck Taylor line.",
     "color": "green",
-    "category": "sneakers"
+    "category": "sneakers",
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   },
   {
     "id": 19,
@@ -405,6 +422,7 @@
     "company": "Adidas",
     "description": "The Adidas Yeezy Boost Sesame V2 is a popular sneaker designed in collaboration with Kanye West. Featuring a neutral Sesame colorway, the shoe boasts a Primeknit upper for a comfortable and flexible fit. The iconic Boost midsole provides responsive cushioning, making it a stylish and comfortable option for casual wear.",
     "color": "white",
-    "category": ["sneakers", "casual"]
+    "category": ["sneakers", "casual"],
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"]
   }
 ]

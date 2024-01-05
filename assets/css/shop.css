@@ -836,6 +836,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   padding: 0.1rem 0.8rem;
 }
 
+
+
 .sizes .sizes-heading {
   display: flex;
   justify-content: space-between;

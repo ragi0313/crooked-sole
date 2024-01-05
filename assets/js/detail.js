@@ -39,6 +39,8 @@ $(".accordion-menu").each(function () {
    return product;
 }
 
+
+
  
  async function displayProductDetails() {
    const queryString = window.location.search;
@@ -75,6 +77,13 @@ $(".accordion-menu").each(function () {
     </div>
      `;
 
+     const sizeOptions = product.sizes.map(size => `
+      <label>
+        <input type="radio" name="sizes" value="${size}">${size}
+        <div class="selected"></div>
+      </label>
+    `).join('');
+
      const productCard = `
       
          <div class="product-images">
@@ -105,21 +114,10 @@ $(".accordion-menu").each(function () {
                <span><a href="">Size Guide</a></span>
              </div>
              <fieldset>
-               <label><input type="radio" name="sizes">US 7<div class="selected"></div></label>
-               <label><input type="radio" name="sizes" disabled>US 7.5<div class="selected"></div></label>
-               <label><input type="radio" name="sizes">US 8<div class="selected"></div></label>
-               <label><input type="radio" name="sizes">US 8.5<div class="selected"></div></label>
-               <label><input type="radio" name="sizes">US 9<div class="selected"></div></label>
-               <label><input type="radio" name="sizes">US 9.5<div class="selected"></div></label>
-               <label><input type="radio" name="sizes">US 10<div class="selected"></div></label>
-               <label><input type="radio" name="sizes">US 10.5<div class="selected"></div></label>
-               <label><input type="radio" name="sizes">US 11<div class="selected"></div></label>
-               <label><input type="radio" name="sizes">US 11.5<div class="selected"></div></label>
-               <label><input type="radio" name="sizes">US 12<div class="selected"></div></label>
-               <label><input type="radio" name="sizes">US 13<div class="selected"></div></label>
+               ${sizeOptions}
              </fieldset>
            </div>
-           <button type="button" class="bag-btn">Add to Cart</button>
+           <button type="button" class="bag-btn" id="addToCart">Add to Cart</button>
            <button type="button" class="fav-btn">Favourite <i class="far fa-heart"></i></button>
            <div class="product-description">
              <p>
@@ -182,6 +180,68 @@ displayProductDetails();
 
 
 
+const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  function updateCartCount() {
+    const cartCount = cartItems.length;
+    $('.cart-btn .count').text(cartCount);
+  }
+
+
+
+function addToCart(productId, productName, productOldPrice, productNewPrice, imageUrl) {
+  const selectedSize = $('input[name="sizes"]:checked').val();
+
+  if (!selectedSize) {
+    alert('Please select a size before adding to the cart.');
+    return;
+  }
+
+  const newItem = {
+    id: productId,
+    name: productName,
+    image: imageUrl,
+    oldPrice: productOldPrice,
+    newPrice: productNewPrice,
+    size: selectedSize,
+    quantity: 1
+  };
+
+  const existingCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+  const existingItem = existingCartItems.find(item => item.id === productId && item.size === selectedSize);
+
+  if (existingItem) {
+    existingItem.quantity++;
+    updateCartCount();
+  } else {
+    existingCartItems.push(newItem);
+    updateCartCount();
+  }
+
+  localStorage.setItem('cartItems', JSON.stringify(existingCartItems));
+
+  console.log("Item added to cart:", newItem);
+  
+ 
+}
+
+$(document).on('click', '#addToCart', function () {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const productId = parseInt(urlParams.get("id"));
+
+  fetchProductDetails(productId)
+    .then(product => {
+      addToCart(productId ,product.title, product.oldPrice, product.newPrice, product.img);
+    })
+    .catch(error => {
+      console.error("Error fetching product details:", error.message);
+    });
+});
+
+
+
+
 let currentIndex = 0;
 
 
@@ -201,3 +261,12 @@ $(document).on('click', '#back, #next', function () {
 $(document).on('click', '.product-dropdown', function () {
   $(this).toggleClass('active');
 });
+
+
+$('#minus, #plus').on('click', function(e) {
+  e.preventDefault();
+  var value = parseInt($('.quantity-item').val(), 10);
+  value += ($(this).attr('id') === 'minus') ? -1 : 1;
+  $('.quantity-item').val(Math.max(value, 1));
+});
+

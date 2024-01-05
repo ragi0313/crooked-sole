@@ -28,6 +28,14 @@ $(window).scroll(function () {
   }
 });
 
+const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  function updateCartCount() {
+    const cartCount = cartItems.length;
+    $('.cart-btn .count').text(cartCount);
+  }
+
+updateCartCount();
+
 export async function fetchProductData() {
   try {
     const response = await fetch("../shopProductData.json"); 
@@ -114,7 +122,7 @@ export async function updateFilteredData() {
                   </div>
                   <div class="product-price">
                     <span class="current">₱${parseInt(newPrice).toLocaleString()} ${discount !== "" ? `<span class="before">${discount}</span>` : ""}</span>
-                    <a href="#" class="product-cart-btn"><i class="ri-shopping-cart-2-line"></i></a>
+                    <div class="product-heart-btn"><i class="ri-heart-line"></i></div>
                   </div>
                 </div>
                </a>
@@ -122,7 +130,7 @@ export async function updateFilteredData() {
             `;
         })
         .join("")
-      : `<h1 style="font-weight: 500; padding-bottom: 500px; padding-left: 20px;">No Results Found for ${query}</h1>`;
+      : `<h1 style="font-weight: 500; padding-bottom: 500px; padding-left: 20px; white-space: nowrap;">No Results Found</h1>`;
 
   $(".product-container").html(resultHtml);
 }

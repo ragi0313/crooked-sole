@@ -3,6 +3,7 @@ import { fetchProductData } from "./shop.js";
 
 $(function () {
   
+  //search functionality
   $('#searchField').on('keypress', function (event) {
     if (event.which === 13) { 
       event.preventDefault();
@@ -15,6 +16,17 @@ $(function () {
       }
     }
   });
+
+  //update cart count
+  const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  function updateCartCount() {
+    const cartCount = cartItems.length;
+    $('.cart-btn .count').text(cartCount);
+  }
+
+  updateCartCount();
+
+
    //nav
    const mobileMenuClose = function () {
      $(".mobile-navigation-menu").removeClass("active");
@@ -117,7 +129,7 @@ $(function () {
             <a href="#" class="p-title">${title}</a>
             <div class="p-price">
               <span class="current">${currentPrice} <span class="before">${beforePrice}</span></span>
-              <a href="#" class="p-cart-btn"><i class="ri-shopping-cart-2-line"></i></a>
+              <a href="#" class="p-cart-btn"><i class="ri-heart-line"></i></a>
             </div>
           </div>
         </div>
@@ -295,10 +307,4 @@ $(function () {
   });
 
 
-  $('#minus, #plus').on('click', function(e) {
-    e.preventDefault();
-    var value = parseInt($('.quantity-item').val(), 10);
-    value += ($(this).attr('id') === 'minus') ? -1 : 1;
-    $('.quantity-item').val(Math.max(value, 1));
-  });
  
