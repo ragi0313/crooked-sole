@@ -208,10 +208,10 @@ function addToCart(productId, productName, productOldPrice, productNewPrice, ima
 
   const existingCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-  const existingItem = existingCartItems.find(item => item.id === productId && item.size === selectedSize);
+  const existingItemIndex = existingCartItems.findIndex(item => item.id === productId && item.size === selectedSize);
 
-  if (existingItem) {
-    existingItem.quantity++;
+  if (existingItemIndex !== -1) {
+    alert('This product with this size is already added to cart');
     updateCartCount();
   } else {
     existingCartItems.push(newItem);

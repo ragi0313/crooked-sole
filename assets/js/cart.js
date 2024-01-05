@@ -1,15 +1,32 @@
-$(document).on('click', '#minus, #plus', function (e) {
+const mobileMenuClose = function () {
+    $(".mobile-navigation-menu").removeClass("active");
+    $(".overlay").removeClass("active");
+  }
+
+  $(".action-btn").each(function () {
+    $(this).on("click", function () {
+      $(".mobile-navigation-menu").addClass("active");
+      $(".overlay").addClass("active");
+    });
+    $(".menu-close-btn").on("click", mobileMenuClose);
+    $(".overlay").on("click", mobileMenuClose);
+  });
+
+
+  $(document).on('click', '#minus, #plus', function (e) {
     e.preventDefault();
-    
+
     const cartCard = $(this).closest('.cart-card');
     const quantityInput = cartCard.find('.quantity-item');
-    
+
     var value = parseInt(quantityInput.val(), 10);
-    
+
     value += ($(this).attr('id') === 'minus') ? -1 : 1;
-    
-    quantityInput.val(Math.max(value, 1));
-    
+
+    value = Math.max(value, 1);
+
+    quantityInput.val(value);
+
     const cartItemId = cartCard.index();
     cartItems[cartItemId].quantity = value;
 
@@ -39,8 +56,8 @@ $(document).on('click', '#minus, #plus', function (e) {
       const cartCard = $('<div>').addClass('cart-card');
       cartCard.html(`
         <div class="img-description">
-          <input type="checkbox" name="">
-          <img src="${item.image}" alt="" width="200" height="130">
+            <input type="checkbox" name="">
+            <img src="${item.image}" alt="" width="200" height="130">
           <div class="img-description-info">
             <div class="img-description-text">
               <p class="cart-product-name">${item.name}</p>
@@ -50,6 +67,17 @@ $(document).on('click', '#minus, #plus', function (e) {
               <div class="price">
                 <span class="current">₱${(item.newPrice * item.quantity).toLocaleString()}</span>
                 ${item.oldPrice !== null ? `<span class="before">₱${(item.oldPrice * item.quantity).toLocaleString()}</span>` : ""}
+              </div>
+            </div>
+            <div class="mobile-add-delete-cart">
+              <div class="quantity">
+                  <a href="#" class="quantity-decrease" id="minus"><span>-</span></a>
+                  <input name="quantity" type="text" class="quantity-item" value="${item.quantity}">
+                  <a href="#" class="quantity-add" id="plus"><span>+</span></a>
+              </div>
+              <div class="wishlist-delete">
+                  <i class="ri-heart-line"></i>
+                  <i class="ri-delete-bin-line" id="removeFromCart"></i>
               </div>
             </div>
           </div>
@@ -92,17 +120,16 @@ function calculateTotalOrderPrice() {
     const cartItemId = cartCard.index();
   
   
-    // Remove the item from the cartItems array
     cartItems.splice(cartItemId, 1);
   
-    // Update local storage with the modified cartItems
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   
-    // Remove the corresponding cart card from the HTML
     cartCard.remove();
-  
+
     updateOrderSummary();
-  });
+
+    updateCartCount();
+});
 
 
   
