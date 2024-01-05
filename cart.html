@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All About Crooked Sole</title>
+  <title>Crooked Sole | Cart</title>
   <link rel="shortcut icon" href="./logo.svg" type="image/svg+xml">
   
   
-  <link rel="stylesheet" href="./assets/css/shop.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,42 +22,27 @@
   <div class="overlay"></div>
 
   <header> 
-    
-    <div class="header-main">
-      <div class="container" style="max-width: 1800px;">
-        <a href="index.html" class="header-logo">
-          <img src="./assets/img/logo.png" alt="Crooked Sole" width="250" height="50">
-        </a>
-        <div class="header-search-container">
-          <input type="search" name="search" class="search-field" placeholder="Search here">
-          <button class="search-btn-head">
-            <ion-icon name="search-outline"></ion-icon>
-          </button>
-          </button>
-        </div>
-        <div class="header-user-actions">
-          <div class="header-search-container">
-            <input type="search" name="search" class="search-field" placeholder="Search here">
-            <button class="search-btn">
-              <ion-icon name="search-outline"></ion-icon>
-            </button>
+    <div class="cart-header">
+      <div class="container">
+        <div class="cart-header-wrapper">
+          <div class="logo">
+            <a href="index.html">
+              <img src="assets/img/logo.png" alt="" width="250" height="50">
+            </a>
           </div>
-          <button class="profile-btn">
-            <ion-icon name="person-outline"></ion-icon>
-          </button>
-          <button class="wishlist-btn">
-            <ion-icon name="heart-outline"></ion-icon>
-            <span class="count">0</span>
-          </button>
-          <button class="cart-btn">
-            <ion-icon name="cart-outline"></ion-icon>
-            <span class="count">2</span>
-          </button>
-
+          <div class="cart-header-right">
+            <div class="secure-checkout">
+              <i class="ri-handbag-fill"></i>
+              <span class="secure-text">secure checkout</span>
+            </div>
+            <div class="back-to-shop">
+              <a href="shop.html" class="bts-text">continue shopping</a>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
     <div class="mobile-bottom-navigation">
       <button class="action-btn">
         <ion-icon name="menu-outline"></ion-icon>
@@ -265,22 +250,53 @@
         </ul>
       </div>
     </nav>
-
   </header>
 
-  <section class="about-cs">
-    <div class="container">
-      <div class="about-hero">
-        <div class="content">
-          <h3>We source the best selection of shoes, top streetwear brands and collectibles</h3>
-          <a href="shop.html" class="btn">Get Started</a>
+  
+  <section class="cart">
+      <div class="container">
+        <p class="cart-upper-text"><span>Cart</span> > Checkout > Pay > Order Complete</p>
+        <div class="cart-wrapper">
+          <div class="cart-list">
+            <div class="cart-heading">
+              <span>Your Cart</span>
+            </div>
+            <div class="cart-card">
+              <div class="img-description">
+                <input type="checkbox" name="">
+                 <img src="assets/img/products/product-1.jpg" alt="" width="200" height="130">
+                  <div class="img-description-info">
+                    <div class="img-description-text">
+                      <p class="cart-product-name">Adidas Gazelle Green<p>
+                      <span class="selected-size">Size 13</span>
+                    </div>
+                    <div class="cart-price">
+                      <div class="price">
+                        <span class="current">P3200</span>
+                        <span class="before">P3500</span>
+                      </div>
+                      <div class="add-delete-cart">
+                        <div class="quantity">
+                          <a href="#" class="quantity-decrease" id="minus"><span>-</span></a>
+                          <input name="quantity" type="text" class="quantity-item" value="1">
+                          <a href="#" class="quantity-add" id="plus"><span>+</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-summary">
+            <div class="order-summary-card">
+              <span class="summary">Order Summary</span>
+              <span class="total-price">P0</span>
+              <a href="#"><button class="btn">Checkout Now</button></a>
+            </div>
+          </div>
         </div>
-        <img src="assets/img/hero/hero-3.jpg" alt="" width="100" height="100">
-
-      </div>
     </div>
   </section>
-
 
   <footer class="footer">
     <div class="container">
@@ -388,6 +404,6 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-  <script type="module" src="./assets/js/detail.js"></script>
+  <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>

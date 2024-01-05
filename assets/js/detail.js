@@ -66,7 +66,7 @@ $(".accordion-menu").each(function () {
             
         <div class="price-info">
           <span class="current">₱${parseInt(newPrice).toLocaleString()}</span>
-          <span class="before">₱${parseInt(oldPrice).toLocaleString()}</span>
+          ${oldPrice !== null ? `<span class="before">₱${parseInt(oldPrice).toLocaleString()}</span>` : ""}
           ${discount !== "" ? `<span class="discount">${discount}</span>` : ""}
         </div>
       </div>
@@ -119,7 +119,7 @@ $(".accordion-menu").each(function () {
                <label><input type="radio" name="sizes">US 13<div class="selected"></div></label>
              </fieldset>
            </div>
-           <button type="button" class="bag-btn">Add to Bag</button>
+           <button type="button" class="bag-btn">Add to Cart</button>
            <button type="button" class="fav-btn">Favourite <i class="far fa-heart"></i></button>
            <div class="product-description">
              <p>
@@ -181,7 +181,6 @@ $(".accordion-menu").each(function () {
 displayProductDetails();
 
 
-var images = $('.side-img-prev');
 
 let currentIndex = 0;
 

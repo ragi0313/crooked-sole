@@ -12,7 +12,7 @@
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2315144261a54c60968daef900bb5741_9366/Gazelle_Shoes_Green_GY7338_42_detail.jpg"
       ],
       "img": "assets/img/products/product-1.jpg",
-      "title": "Gazelle Shoes Green",
+      "title": "Adidas Gazelle Shoes Green",
       "star": 5,
       "reviews": 123,
       "discount": "-23%",
@@ -33,7 +33,7 @@
       "https://trilogymerchph.com/cdn/shop/files/Womens-GS-Nike-Dunk-Low-Next-Nature-Iridescent-Blue-Whisper-Hyper-Royal-Green-Abyss-White-FJ4668-400-2_1024x1024@2x.jpg?v=1684765724"
     ],
     "img": "assets/img/products/product-2.jpg",
-    "title": "Dunk Low Blue Whisper",
+    "title": "Nike Dunk Low Blue Whisper",
     "star": 5,
     "reviews": 123,
     "discount": "-30%",
@@ -55,7 +55,7 @@
       "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/51426d43-2c8c-46ad-abcb-f77a4012e8c9/women-s-air-jordan-1-high-og-satin-bred-fd4810-061-release-date.jpg"
     ],
     "img": "assets/img/products/product-3.jpg",
-    "title": "Jordan 1 High Patent Bred",
+    "title": "Nike Jordan 1 High Patent Bred",
     "star": 5,
     "reviews": 123,
     "discount": "-50%",
@@ -77,7 +77,7 @@
       "https://trilogymerchph.com/cdn/shop/products/CROCS-SALEHE-BEMBURY-SASQUATCH-BLACK-207393-001-5_1024x1024@2x.jpg?v=1671382788"
     ],
     "img": "assets/img/products/product-4.jpg",
-    "title": "Salehe Bembury Pollex Clog (Sasquatch)",
+    "title": "Crocs X Salehe Bembury Pollex Clog (Sasquatch)",
     "star": 5,
     "reviews": 123,
     "discount": "",
@@ -97,7 +97,7 @@
       "https://pimpkicks.com.ph/cdn/shop/products/Converse_X_CDG_Chuck_Taylor_All_Star_High_Play_White_Men_s5_900x900.png?v=1552488519"
     ],
     "img": "assets/img/products/product-5.jpg",
-    "title": "Chuck Taylor All-Star 70 High PLAY White",
+    "title": "Converse Chuck Taylor All-Star 70 High PLAY White",
     "star": 5,
     "reviews": 123,
     "discount": "-83%",
@@ -118,7 +118,7 @@
       "https://b2455589.smushcdn.com/2455589/wp-content/uploads/2023/06/yeezy-500-soft-vision-sneakers-3-1260x1260.webp?lossy=0&strip=1&webp=1"
     ],
     "img": "assets/img/products/product-6.jpg",
-    "title": "Yeezy 500 Soft Vision",
+    "title": "Adidas Yeezy 500 Soft Vision",
     "star": 5,
     "reviews": 123,
     "discount": "-60%",
@@ -143,7 +143,7 @@
       "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2eff21d9-db5d-49a2-95f9-d627c1d376a5/tatum-1-st-louis-pf-basketball-shoes-LDFvBJ.png"
     ],
     "img": "assets/img/products/product-7.jpg",
-    "title": "Jordan Tatum 1 PF St. Louis Men's",
+    "title": "Nike Jordan Tatum 1 PF St. Louis Men's",
     "star": 5,
     "reviews": 123,
     "discount": "",
@@ -188,7 +188,7 @@
       "https://images.moresneakers.com/womens-nike-dunk-low-next-nature-phantom-gold-suede-dn1431-001-16629666660568.png"
     ],
     "img": "assets/img/products/product-9.jpg",
-    "title": "Dunk Low Next Nature 'Phantom Gold Suede'",
+    "title": "Nike Dunk Low Next Nature 'Phantom Suede'",
     "star": 5,
     "reviews": 123,
     "discount": "-53%",
@@ -208,7 +208,7 @@
       "https://imagedelivery.net/2DfovxNet9Syc-4xYpcsGg/b1cb3374-19f2-48f0-593b-e6fd9f247200/product"
     ],
     "img": "assets/img/products/product-10.jpg",
-    "title": "2002R Protection Pack - Mirage Gray",
+    "title": "New Balance 2002R Protection Pack - Mirage Gray",
     "star": 4.5,
     "reviews": 123,
     "discount": "",
@@ -252,7 +252,7 @@
       "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/b8b47d82-7797-4d71-91a3-0b135f6dc1ff/air-jordan-1-x-a-ma-mani%C3%A9re-sail-and-burgundy-do7097%E2%80%93100-release-date.jpg"
     ],
     "img": "assets/img/products/product-12.jpg",
-    "title": "Air Jordan 1 x A Ma Maniere",
+    "title": "Nike Air Jordan 1 x A Ma Maniere",
     "star": 4,
     "reviews": 123,
     "discount": "",
@@ -273,7 +273,7 @@
       "https://madkicks.com/cdn/shop/products/Adidas-Yeezy-Boost-350-V2-Slate-5_720x.jpg?v=1663480510"
     ],
     "img": "assets/img/products/product-13.jpg",
-    "title": "Yeezy Boost 350 V2 Sesame",
+    "title": "Adidas Yeezy Boost 350 V2 Sesame",
     "star": 5,
     "reviews": 123,
     "discount": "-15%",
@@ -294,7 +294,7 @@
       "https://cdn.clothbase.com/uploads/694b5fff-9bd4-4ef6-9fbb-e48e7732aa02/14-09-2022_blr_208113-001_4.jpg"
     ],
     "img": "assets/img/products/product-14.jpg",
-    "title": "Staple Homing Pigeon All Terrain Clog",
+    "title": "Crocs X Staple Homing Pigeon All Terrain Clog",
     "star": 5,
     "reviews": 123,
     "discount": "-50%",
@@ -315,7 +315,7 @@
       "https://www.footworlduk.com/cdn/shop/products/mens-adidas-yeezy-boost-700-mnvn-honey-flux-gz0717-honeyf-adidas-product_tags-659658785564-latest-sneakers-at-foot-world-3_1800x1800.jpg?v=1668502902"
     ],
     "img": "assets/img/products/product-15.jpg",
-    "title": "Yeezy Boost 700 MNVN Honey Flux",
+    "title": "Adidas Yeezy Boost 700 MNVN Honey Flux",
     "star": 5,
     "reviews": 123,
     "discount": "-21%",
@@ -335,7 +335,7 @@
       "https://www.cruizeer.com/cdn/shop/products/IMG_0451.jpg?v=1618014665&width=990"
     ],
     "img": "assets/img/products/product-16.jpg",
-    "title": "Air Jordan 1 Retro High Defiant",
+    "title": "Nike Air Jordan 1 Retro High Defiant",
     "star": 4,
     "reviews": 123,
     "discount": "-79%",
@@ -355,7 +355,7 @@
       "https://whatsyoursize.co.uk/cdn/shop/files/5_86dd6b8a-433d-4673-96e1-ecf59d6ffadd_700x.webp?v=1686663660"
     ],
     "img": "assets/img/products/product-17.jpg",
-    "title": "Yeezy Slides Ochre",
+    "title": "Adidas Yeezy Slides Ochre",
     "star": 5,
     "reviews": 123,
     "discount": "-50%",
@@ -364,7 +364,7 @@
     "description": "The Adidas Yeezy Slide Ochre is a fashion-forward and comfortable footwear option designed by Kanye West. These slides feature a distinctive ochre colorway, offering a warm and earthy tone to elevate your casual style. Constructed with a lightweight foam compound, the Adidas Yeezy Slide Ochre ensures a cozy and practical choice for lounging or making a statement in your streetwear ensemble.",
     "company": "Adidas",
     "color": "yellow",
-    "category": ["sandals"]
+    "category": "sandals"
   },
   {
     "id": 18,
@@ -375,7 +375,7 @@
       "https://undefeated.com/cdn/shop/products/footwear_converse_undefeated_chuck-70-mid_172397C.view_4_720x.jpg?v=1634062935"
     ],
     "img": "assets/img/products/product-18.jpg",
-    "title": "Chuck 70 mid Undefeated Seaspray",
+    "title": "Converse Chuck 70 mid Undefeated Seaspray",
     "star": 5,
     "reviews": 123,
     "discount": "-69%",
@@ -396,7 +396,7 @@
       "https://b2455589.smushcdn.com/2455589/wp-content/uploads/2022/08/yeezy-boost-350-v2-sesame-sneakers-3-1260x1260.webp?lossy=0&strip=1&webp=1"
     ],
     "img": "assets/img/products/product-19.jpg",
-    "title": "Yeezy Boost 350 V2 Sesame",
+    "title": "Adidas Yeezy Boost 350 V2 Sesame",
     "star": 5,
     "reviews": 123,
     "discount": "-34%",

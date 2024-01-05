@@ -292,5 +292,13 @@ $(function () {
 
      const productId = $(this).attr("href").split("=")[1];
      window.location.href = `product-details.html?id=${productId}`;
-  })
+  });
+
+
+  $('#minus, #plus').on('click', function(e) {
+    e.preventDefault();
+    var value = parseInt($('.quantity-item').val(), 10);
+    value += ($(this).attr('id') === 'minus') ? -1 : 1;
+    $('.quantity-item').val(Math.max(value, 1));
+  });
  
