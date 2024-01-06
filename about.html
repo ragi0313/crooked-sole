@@ -23,9 +23,10 @@
 
   <header> 
     
-    <div class="header-main">
+    <div class="header-main" style="box-shadow: none; border-bottom: 1px solid var(--gainsboro);">
       <div class="container" style="max-width: 1800px;">
         <a href="index.html" class="header-logo">
+
           <img src="./assets/img/logo.png" alt="Crooked Sole" width="250" height="50">
         </a>
         <div class="header-search-container">
@@ -49,10 +50,12 @@
             <ion-icon name="heart-outline"></ion-icon>
             <span class="count">0</span>
           </button>
-          <button class="cart-btn">
-            <ion-icon name="cart-outline"></ion-icon>
-            <span class="count">2</span>
-          </button>
+          <a href="cart.html">
+            <button class="cart-btn">
+              <ion-icon name="cart-outline"></ion-icon>
+              <span class="count">2</span>
+            </button>
+          </a>
 
         </div>
       </div>
@@ -63,10 +66,12 @@
         <ion-icon name="menu-outline"></ion-icon>
       </button>
 
-      <button class="cart-btn">
-        <ion-icon name="cart-outline"></ion-icon>
-        <span class="count">2</span>
-      </button>
+      <a href="cart.html">
+        <button class="cart-btn">
+          <ion-icon name="cart-outline"></ion-icon>
+          <span class="count">2</span>
+        </button>
+      </a>
       
       <button class="wishlist-btn">
         <ion-icon name="heart-outline"></ion-icon>
@@ -272,14 +277,44 @@
     <div class="container">
       <div class="about-hero">
         <div class="content">
+          <span>About us</span>
           <h3>We source the best selection of shoes, top streetwear brands and collectibles</h3>
-          <a href="shop.html" class="btn">Get Started</a>
+          <a href="shop.html" class="btn">Shop Now</a>
         </div>
-        <img src="assets/img/hero/hero-3.jpg" alt="" width="100" height="100">
-
+        <div class="about-images">
+          <img src="assets/img/aboutt.png" alt="">
+        </div>
       </div>
     </div>
   </section>
+
+  <div class="about">
+    <div class="container">
+      <div class="about-text">
+        <div class="about-img">
+          <img src="assets/img/about.jpg" alt="" width="641" height="542">
+        </div>
+        <div class="about-the-store">
+          <span>About the store</span>
+          <p class="about-description">
+            Crooked Sole is not your typhical fashion and sport kicks store. Instead, Crooked Sole is owned by a guy who is only interested in selling kicks that he feels offer the best quality and design. 
+          </p>
+          <p class="about-description">
+            Nothing else matters at Crooked Sole because we understand that quality and design are not just features; they are the essence of what makes a pair of kicks extraordinary. Join us on this journey, and let your footwear speak volumes about your unique style and uncompromising standards. Welcome to Crooked Sole – where exceptional kicks are the only language we speak.
+          </p>
+          <p class="about-description">
+            If this sounds a little elitist, it's because it is. If I don't like it, I don't sell it.
+          </p>
+          <p class="about-description">
+            Yours truly,
+          </p>
+          <p class="about-description">
+            Rafael Borbon(Owner of Crooked Sole)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <footer class="footer">
@@ -350,13 +385,18 @@
           <p class="socials-title">Find us on</p>
           <ul class="socials-list">
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.facebook.com/CrookedSole" target="_blank" class="social-link">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.instagram.com/crooked_sole"  target="_blank" class="social-link">
                 <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@crooked_solee?_t=8ih6Ffw5Fdy&_r=1&fbclid=IwAR3ZwFCW7pm2G47nrJCk75XwDPZ3-ovvODfux26G_E-kvIIfS6498iSA-uU" target="_blank" class="social-link">
+                <ion-icon name='logo-tiktok'></ion-icon>
               </a>
             </li>
           </ul>
@@ -388,6 +428,6 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-  <script type="module" src="./assets/js/detail.js"></script>
+  <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>

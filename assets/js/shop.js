@@ -99,13 +99,22 @@ export async function updateFilteredData() {
     return titleMatches && categoryMatches && colorMatches && brandMatches && priceMatches;
   });
 
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  filteredItems = shuffleArray(filteredItems);
   const resultHtml =
     filteredItems.length > 0
       ? filteredItems
         .map(function ({ id, img, title, reviews, discount, newPrice, star }) {
           const starIcons = Array.from({ length: Math.floor(star) }, () => '<i class="ri-star-fill"></i>').join(' ') +
-                            (star % 1 !== 0 ? '<i class="ri-star-half-fill"></i>' : '') +
-                            Array.from({ length: Math.floor(5 - star) }, () => '<i class="ri-star-line"></i>').join(' ');
+            (star % 1 !== 0 ? '<i class="ri-star-half-fill"></i>' : '') +
+            Array.from({ length: Math.floor(5 - star) }, () => '<i class="ri-star-line"></i>').join(' ');
           return `
               <div class="product-box">
               <a href="product-details.html?id=${id}">
@@ -117,7 +126,7 @@ export async function updateFilteredData() {
                 <div class="product-text-box">
                   <span href="#" class="product-title">${title}</span>
                   <div class="product-reviews">
-                    ${starIcons} 
+                    ${starIcons}
                     <span>(${reviews}+)</span>
                   </div>
                   <div class="product-price">
@@ -134,6 +143,7 @@ export async function updateFilteredData() {
 
   $(".product-container").html(resultHtml);
 }
+
 
 let selectedCategory = null;
 let selectedColor = null;

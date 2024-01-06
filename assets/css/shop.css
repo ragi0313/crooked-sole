@@ -1042,38 +1042,107 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
  * #ABOUT
 \*-----------------------------------*/
 
-
+.about-cs .container { 
+  max-width: 100%;
+  padding-inline: 0;
+}
 
 .about-cs .about-hero {
-  background: var(--light-red);
-  height: 500px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  place-items: center;
+  background-image: url('../img/about-hero.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-around;
   position: relative;
 }
 
 
 .about-cs .content {
+  max-width: 200px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 12px;
   width: 500px;
   position: relative;
+  color: var(--white);
+}
+
+.about-cs .content span {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--white);
 }
 
 .about-cs .content h3 {
-  
-  font-size: 35px;
+  font-size: var(--fs-1);
   font-weight: 600;
+  text-align: center;
 }
 
 .about-cs .content .btn {
-  width: 150px;
   padding-top: 15px;
-  border-radius: 5px;
+  border-radius: 3px;
+  transition: var(--transition-1);
 }
 
+.about-cs .content .btn:hover {
+  background: var(--black_13);
+}
+
+.about-images img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  display: flex;
+}
+
+
+.about {
+  margin-block: 120px;
+}
+
+
+
+.about-text {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about-text img {
+  width: 502px;
+  height: 502px;
+}
+
+.about-text span {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--black);
+}
+
+.about-the-store {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-text .about-description {
+  max-width: 500px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black_13);
+  line-height: 1.5;
+}
 
 
 
@@ -1205,6 +1274,15 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
     border-top-right-radius: var(--border-radius-md);
   }
 
+  .about-cs .content {
+    max-width: 500px;
+  }
+
+  .about-images img {
+    width: 450px;
+    height: 349px;
+  }
+
 }
 
 
@@ -1248,10 +1326,12 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
   html { font-size: 17px; }
 
-  .container {
+  .about-cs .container, .container {
     max-width: 750px;
     margin: auto;
   }
+
+  .about-cs .container { max-width: 900px; }
 
   .header-main .container { gap: 80px; }
 
@@ -1262,6 +1342,28 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   .product-box { width: 250px; }
 
 
+  .about-cs .about-hero { 
+    flex-direction: row;
+    overflow: visible;
+  }
+
+  .about-cs .content { 
+    padding-left: 15px;
+    max-width: 100%;
+    flex-grow: .5;
+    align-items: start; 
+  }
+
+  .about-cs .content h3 { text-align: start; }
+
+  .about-images { 
+    padding-top: 100px;
+    width: 500px;
+    height: 500px;
+    transform: translateY(30%);
+  }
+
+  .about-text { flex-direction: row; }
 
 
   /*Footer */
@@ -1340,9 +1442,14 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
   .desktop-title { display: block; }
 
+  
+
 }
 
 @media (min-width: 1024px) {
+
+
+  .about-cs .container { max-width: 900px; }
   
 }
 
@@ -1355,7 +1462,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
     --fs-2: 1.125rem;
   }
 
-  .container { max-width: 1024px; }
+  .about-cs .container, .container { max-width: 1024px; }
 
   /* HEADER */
   .header-socials-container {
@@ -1441,13 +1548,16 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 @media (min-width: 1200px) {
-  .container { max-width: 1100px; }
+  
+  .about-cs .container, .container { max-width: 1100px; }
 
   .product-container { grid-template-columns: repeat(4, 0.19fr); }
 
   .product-box { width: 220px; }
 
   .product-preview { width: 580px; }
+
+  .about-hero { gap: 70px; }
 
 }
 
@@ -1456,7 +1566,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 @media (min-width: 1400px) {
   html { font-size: 18px; }
 
-  .container { max-width: 1510px; }
+  .about-cs .container, .container { max-width: 1510px; }
 
   .main-content { margin-left: 300px; }
 

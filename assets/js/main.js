@@ -1,4 +1,4 @@
-import { heroSlideData, saleData, productSideBannerImages } from "./landingProductData.js";
+import { heroSlideData, productSideBannerImages } from "./landingProductData.js";
 import { fetchProductData } from "./shop.js";
 
 $(function () {
@@ -105,37 +105,45 @@ $(function () {
        clickable: true,
      },
      autoplay: {
-      delay: 2000,
+      delay: 4000,
     }
    })
  
 
 
    //product slider flash deals
-   $('.sale-slider .glider-contain').html(
-    saleData.map(({ discount, imageSrc, brand, title, currentPrice, beforePrice }) => `
-      <div class="glider">
-        <div class="sale-product-box">
-          <span class="p-discount"><i class="ri-flashlight-fill"></i><br><b>${discount}%</b></span>
-          <div class="sale-img-container">
-            <div class="s-img">
-              <a href="#">
-                <img src="${imageSrc}" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="sale-text-box">
-            <div class="p-brand"><span>${brand}</span></div>
-            <a href="#" class="p-title">${title}</a>
-            <div class="p-price">
-              <span class="current">${currentPrice} <span class="before">${beforePrice}</span></span>
-              <a href="#" class="p-cart-btn"><i class="ri-heart-line"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    `).join('')
-  );
+   async function displayFlashDeals() {
+    const product = await fetchProductData();
+    const productIdsToDisplay = [3, 5, 19, 21, 22, 23];
+    const flashDealProducts = product.filter(({ id }) => productIdsToDisplay.includes(id));
+
+     let saleProducts = flashDealProducts.map(({ id, discount, flashImg, company, title, newPrice, oldPrice }) => `
+       <div class="glider">
+         <div class="sale-product-box">
+           <span class="p-discount"><i class="ri-flashlight-fill"></i><br><b>${discount}</b></span>
+           <div class="sale-img-container">
+             <div class="s-img">
+               <a href="product-details.html?id=${id}">
+                 <img src="${flashImg}" alt="Flash Deal Products" loading="eager">
+               </a>
+             </div>
+           </div>
+           <div class="sale-text-box">
+             <div class="p-brand"><span>${company}</span></div>
+             <a href="#" class="p-title">${title}</a>
+             <div class="p-price">
+               <span class="current">₱${newPrice} <span class="before">₱${oldPrice}</span></span>
+               <a href="#" class="p-cart-btn"><i class="ri-heart-line"></i></a>
+             </div>
+           </div>
+         </div>
+       </div>
+     `).join('')
+     $('.sale-slider .glider-contain').html(saleProducts);
+   }
+
+   displayFlashDeals();
+
 
   
    $("#nextBtn").on("click", function () {
@@ -177,7 +185,7 @@ $(function () {
    `).join('');
     
    $('.slider').html(`
-     <div class="list">
+     <div class="list" loading="eager">
        ${itemsHTML}
      </div>
      <div class="buttons">
@@ -231,7 +239,7 @@ $(function () {
            <div class="sale-img-container">
              <div class="s-img">
                <a href="product-details.html?id=${id}">
-                 <img src="${img}" alt="${title}">
+                 <img src="${img}" alt="${title}" loading="eager">
                </a>
              </div>
            </div>
@@ -253,7 +261,7 @@ $(function () {
            <div class="sale-img-container">
              <div class="s-img">
                <a href="product-details.html?id=${id}">
-                 <img src="${img}" alt="${title}">
+                 <img src="${img}" alt="${title}" loading="eager">
                </a>
              </div>
            </div>
