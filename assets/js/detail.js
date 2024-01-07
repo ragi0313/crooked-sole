@@ -169,11 +169,11 @@ $(".accordion-menu").each(function () {
                <div class="product-dropdown-items">
                  <span>Orders over ₱5000 gets free shipping.</span>
                  <div class="">
-                   <ul>
-                     <li>Black</li>
-                     <li>Bald</li>
-                     <li>A Bitch</li>
-                   </ul>  
+                 <ul>
+                  <li>Legit seller! Easy to transact with. Goes the extra mile.</li>
+                  <li>Straight up. No hassle. Until next the transaction. 👍</li>
+                  <li>A Madali at maayos kausap. He really made sure item is packed properly when delivered lalo medyo malayo location. Kudos to this seller</li>
+                 </ul>  
                  </div>
                </div>
              </div>
