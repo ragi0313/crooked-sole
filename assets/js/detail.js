@@ -28,6 +28,26 @@ $(".accordion-menu").each(function () {
    });
  });
 
+ let query = "";
+ const urlParams = new URLSearchParams(window.location.search);
+ const queryFromUrl = urlParams.get('search');
+
+  if (queryFromUrl) {
+    query = decodeURIComponent(queryFromUrl);
+    updateFilteredData();
+  }
+
+  $('input[name="search"]').on('keypress', function(event) {
+    if(event.which === 13) {
+       query = $(this).val().trim();
+       if (query !== "") {
+         const shopUrl = `shop.html?search=${encodeURIComponent(query)}`;
+         window.location.href = shopUrl;
+       }
+       updateFilteredData();
+    }
+ });
+
 
  async function fetchProductDetails(productId) {
    const response = await fetch('../shopProductData.json');
@@ -57,9 +77,11 @@ $(".accordion-menu").each(function () {
        $('.holder').html(notFoundMessage);
        return;
    }
- 
-    
      const { detailImg, title, company, star, reviews, discount, oldPrice, newPrice, description, color } = product;
+
+     const starIcons = Array.from({ length: Math.floor(star) }, () => '<i class="ri-star-fill"></i>').join(' ') +
+     (star % 1 !== 0 ? '<i class="ri-star-half-fill"></i>' : '') +
+     Array.from({ length: Math.floor(5 - star) }, () => '<i class="ri-star-line"></i>').join(' ');
 
      const mobileProductDetails = `
      <div class="mobile-title">
@@ -85,13 +107,12 @@ $(".accordion-menu").each(function () {
     `).join('');
 
      const productCard = `
-      
          <div class="product-images">
            <div class="side-product">
             ${detailImg.map(url => `<img src="${url}" alt="${title}" class="side-img-prev">`).join('')}
            </div>
            <div class="product-preview" id="showImg">
-            <img src="${detailImg[0]}" alt="" class="product-preview-img">
+            <img src="${detailImg[0]}" alt="" class="product-preview-img" loading="lazy">
              <div class="preview-buttons">
                <button id="back"><</button>
                <button id="next">></button>
@@ -142,11 +163,7 @@ $(".accordion-menu").each(function () {
              </div>
              <div class="product-dropdown">
                <h3 class="shipping-reviews-text">Reviews(${reviews}) 
-                 <i class="ri-star-line"></i>
-                 <i class="ri-star-line"></i>
-                 <i class="ri-star-line"></i>
-                 <i class="ri-star-line"></i>
-                 <i class="ri-star-line"></i>
+                 ${starIcons}
                  <span class="arrow"></span>
                </h3>
                <div class="product-dropdown-items">
@@ -180,11 +197,14 @@ displayProductDetails();
 
 
 
+
 const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-  function updateCartCount() {
-    const cartCount = cartItems.length;
-    $('.cart-btn .count').text(cartCount);
-  }
+function updateCartCount() {
+  const cartCount = cartItems.length;
+  $('.cart-btn .count').text(cartCount);
+}
+
+updateCartCount();
 
 
 
@@ -196,6 +216,7 @@ function addToCart(productId, productName, productOldPrice, productNewPrice, ima
     return;
   }
 
+  // Create an object that will be added to cart
   const newItem = {
     id: productId,
     name: productName,
@@ -212,20 +233,16 @@ function addToCart(productId, productName, productOldPrice, productNewPrice, ima
 
   if (existingItemIndex !== -1) {
     alert('This product with this size is already added to cart');
-    updateCartCount();
   } else {
+    alert('Added to cart successfully!');
     existingCartItems.push(newItem);
     updateCartCount();
   }
 
-  localStorage.setItem('cartItems', JSON.stringify(existingCartItems));
-
-  console.log("Item added to cart:", newItem);
-  
- 
+  localStorage.setItem('cartItems', JSON.stringify(existingCartItems));  
 }
 
-$(document).on('click', '#addToCart', function () {
+$(document).on('click', '#addToCart',function () {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const productId = parseInt(urlParams.get("id"));
@@ -263,10 +280,4 @@ $(document).on('click', '.product-dropdown', function () {
 });
 
 
-$('#minus, #plus').on('click', function(e) {
-  e.preventDefault();
-  var value = parseInt($('.quantity-item').val(), 10);
-  value += ($(this).attr('id') === 'minus') ? -1 : 1;
-  $('.quantity-item').val(Math.max(value, 1));
-});
 

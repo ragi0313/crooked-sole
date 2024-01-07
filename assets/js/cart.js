@@ -13,32 +13,13 @@ const mobileMenuClose = function () {
   });
 
 
-  $(document).on('click', '#minus, #plus', function (e) {
-    e.preventDefault();
 
-    const cartCard = $(this).closest('.cart-card');
-    const quantityInput = cartCard.find('.quantity-item');
-
-    var value = parseInt(quantityInput.val(), 10);
-
-    value += ($(this).attr('id') === 'minus') ? -1 : 1;
-
-    value = Math.max(value, 1);
-
-    quantityInput.val(value);
-
-    const cartItemId = cartCard.index();
-    cartItems[cartItemId].quantity = value;
-
-    updateOrderSummary();
-});
-  
   const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
   
   function generateCartCards(cartItems) {
     const cartList = $('.cart-list');
     cartList.empty();
-
+    
     if(cartItems.length === 0) {
         const emptyMessage = $('<div>').addClass('cart-empty-message');
         emptyMessage.html(`
@@ -99,37 +80,106 @@ const mobileMenuClose = function () {
   }
   updateOrderSummary();
 }
-
+ 
 function updateOrderSummary() {
-    const totalOrderPrice = calculateTotalOrderPrice();
-    $('.total-price').text(`₱${totalOrderPrice.toLocaleString()}`);
+  const totalOrderPrice = calculateTotalOrderPrice();
+  $('#totalPrice').text(`₱${totalOrderPrice.toLocaleString()}`);
+  updateCheckoutButtonState();
 }
+
+function updateCheckoutButtonState() {
+  const checkedCheckboxes = $(".cart-card input[type='checkbox']:checked");
+  const checkoutButton = $('#checkoutButton');
+
+  checkedCheckboxes.length > 0 ? checkoutButton.prop('disabled', false) : checkoutButton.prop('disabled', true);
+}
+
+
 
 function calculateTotalOrderPrice() {
-    let total = 0;
-    cartItems.forEach(item => {
-        total += item.newPrice * item.quantity;
-    });
-    return total;
+  let total = 0;
+  $(".cart-card input[type='checkbox']:checked").each(function () {
+      const cartItemId = $(this).closest('.cart-card').index();
+      const item = cartItems[cartItemId];
+      total += item.newPrice * item.quantity;
+  });
+  return total;
 }
   
-  generateCartCards(cartItems);
+generateCartCards(cartItems);
 
-  $(document).on('click', '#removeFromCart', function() {
-    const cartCard = $(this).closest('.cart-card');
-    const cartItemId = cartCard.index();
-  
-  
-    cartItems.splice(cartItemId, 1);
-  
-    localStorage.setItem('cartItems', JSON.stringify(cartItems));
-  
-    cartCard.remove();
+function getCheckedItems() {
+  const checkedItems = [];
+  $(".cart-card input[type='checkbox']:checked").each(function () {
+    const cartItemId = $(this).closest('.cart-card').index();
+    const item = cartItems[cartItemId];
+    const quantityInput = $(this).closest('.cart-card').find('.quantity-item');
+    const quantity = parseInt(quantityInput.val(), 10);
 
-    updateOrderSummary();
+    // Create a new item object with the current quantity
+    const checkedItem = {
+      id: item.id,
+      name: item.name,
+      image: item.image,
+      size: item.size,
+      newPrice: item.newPrice,
+      oldPrice: item.oldPrice,
+      quantity: quantity
+    };
 
-    updateCartCount();
+    checkedItems.push(checkedItem);
+  });
+  return checkedItems;
+}
+
+function updateCheckedItems() {
+  const checkedItems = getCheckedItems(); 
+
+  localStorage.setItem('checkedItems', JSON.stringify(checkedItems));
+}
+
+$(document).on('change', '.cart-card input[type="checkbox"]', function () {
+  updateOrderSummary();
+  updateCheckedItems();
 });
+
+$(document).on('click', '#minus, #plus', function (e) {
+  e.preventDefault();
+
+  const cartCard = $(this).closest('.cart-card');
+  const quantityInput = cartCard.find('.quantity-item');
+
+  var value = parseInt(quantityInput.val(), 10);
+
+  value += ($(this).attr('id') === 'minus') ? -1 : 1;
+
+  value = Math.max(value, 1);
+
+  quantityInput.val(value);
+
+  const cartItemId = cartCard.index();
+  cartItems[cartItemId].quantity = value;
+
+  updateOrderSummary();
+  updateCheckedItems();
+});
+
+$(document).on('click', '#removeFromCart', function() {
+  const cartCard = $(this).closest('.cart-card');
+  const cartItemId = cartCard.index();
+  
+  cartItems.splice(cartItemId, 1);
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+  const checkbox = cartCard.find('input[type="checkbox"]');
+  if (checkbox.prop('checked')) updateCheckedItems();
+  
+  cartCard.remove();
+  updateOrderSummary();
+  updateCartCount();
+});
+
+
 
 
   

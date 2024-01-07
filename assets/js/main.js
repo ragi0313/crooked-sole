@@ -4,16 +4,18 @@ import { fetchProductData } from "./shop.js";
 $(function () {
   
   //search functionality
-  $('#searchField').on('keypress', function (event) {
-    if (event.which === 13) { 
-      event.preventDefault();
+  $('#searchField, #searchBtn').on('keypress click', function (event) {
+    if (event.type === 'keypress' && event.which !== 13) {
+        return; 
+    }
 
-      const query = $('#searchField').val().trim();
+    event.preventDefault();
 
-      if (query !== "") {
+    const query = $('#searchField').val().trim();
+
+    if (query !== "") {
         const shopUrl = `shop.html?search=${encodeURIComponent(query)}`;
         window.location.href = shopUrl;
-      }
     }
   });
 

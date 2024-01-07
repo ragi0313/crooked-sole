@@ -1048,7 +1048,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .about-cs .about-hero {
-  background-image: url('../img/about-hero.gif');
+  background-image: url('../img/about/about-hero.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -1105,9 +1105,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 
-.about {
-  margin-block: 120px;
-}
+.about { margin-block: 120px; }
 
 
 
@@ -1144,6 +1142,24 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   line-height: 1.5;
 }
 
+
+.about-transactions {
+  padding-block: 80px;
+}
+
+.about-transactions .transactions-heading {
+  font-family: Arial Black;
+  text-align: center;
+}
+
+.transactions-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.transactions-wrapper img { object-fit: cover; }
 
 
 /*-----------------------------------*\

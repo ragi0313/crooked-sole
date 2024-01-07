@@ -18,9 +18,9 @@
 </head>
 
 
-<body>
+<body style="position: relative;">
   <div class="overlay"></div>
-
+  
   <header> 
     <div class="cart-header">
       <div class="container">
@@ -61,10 +61,12 @@
       </div>
     </div>
     <div class="mobile-bottom-navigation">
-      <button class="action-btn">
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
-
+      <a href="index.html">
+        <button class="home-btn">
+          <ion-icon name="home-outline"></ion-icon>
+        </button>
+      </a>
+      
       <a href="#">
         <button class="cart-btn">
           <ion-icon name="cart-outline"></ion-icon>
@@ -72,18 +74,13 @@
         </button>
       </a>
       
-      <button class="wishlist-btn">
-        <ion-icon name="heart-outline"></ion-icon>
-        <span class="count">0</span>
-      </button>
+
       <button class="profile-btn">
         <ion-icon name="person-outline"></ion-icon>
       </button>
-      <a href="index.html">
-        <button class="home-btn">
-          <ion-icon name="home-outline"></ion-icon>
-        </button>
-      </a>
+      <button class="action-btn">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
       
     </div>
 
@@ -101,7 +98,7 @@
         </li>
         <li class="menu-category">
           <button class="accordion-menu">
-            <p class="menu-title">New & Featured</p>
+            <p class="menu-title">Products</p>
             <div>
               <ion-icon name="add-outline" class="add-icon"></ion-icon>
               <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
@@ -110,98 +107,24 @@
 
           <ul class="submenu-category-list">
             <li class="submenu-category">
-              <a href="#" class="submenu-title">New & Featured</a>
+              <a href="shop.html" class="submenu-title">New & Featured</a>
             </li>
             <li class="submenu-category">
-              <a href="#" class="submenu-title">Shop By Brand</a>
+              <a href="shop.html" class="submenu-title">Shop By Brand</a>
             </li>
             <li class="submenu-category">
-              <a href="#" class="submenu-title">New For Men</a>
+              <a href="shop.html" class="submenu-title">New For Men</a>
             </li>
             <li class="submenu-category">
-              <a href="#" class="submenu-title">New For Women</a>
+              <a href="shop.html" class="submenu-title">New For Women</a>
             </li>
             <li class="submenu-category">
-              <a href="#" class="submenu-title">New For Kids</a>
+              <a href="shop.html" class="submenu-title">New For Kids</a>
             </li>
           </ul>
         </li>
 
-        <li class="menu-category">
-          <button class="accordion-menu">
-            <p class="menu-title">Men</p>
-            <div>
-              <ion-icon name="add-outline" class="add-icon"></ion-icon>
-              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-            </div>
-          </button>
-
-          <ul class="submenu-category-list">
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Featured</a>
-            </li>
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Shoes</a>
-            </li>
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Clothing</a>
-            </li>
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Shop by Brand</a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="menu-category">
-          <button class="accordion-menu">
-            <p class="menu-title">Women</p>
-            <div>
-              <ion-icon name="add-outline" class="add-icon"></ion-icon>
-              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-            </div>
-          </button>
-
-          <ul class="submenu-category-list">
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Featured</a>
-            </li>
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Shoes</a>
-            </li>
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Clothing</a>
-            </li>
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Shop by Brand</a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="menu-category">
-          <button class="accordion-menu">
-            <p class="menu-title">Kids</p>
-            <div>
-              <ion-icon name="add-outline" class="add-icon"></ion-icon>
-              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-            </div>
-          </button>
-
-          <ul class="submenu-category-list">
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Featured</a>
-            </li>
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Boys' Shoes</a>
-            </li>
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Girls' Shoes</a>
-            </li>
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Kids By Age</a>
-            </li>
-          </ul>
-        </li>
-
+    
         <li class="menu-category">
           <button class="accordion-menu">
             <p class="menu-title">Sale</p>
@@ -213,21 +136,25 @@
 
           <ul class="submenu-category-list">
             <li class="submenu-category">
-              <a href="#" class="submenu-title">Shop by Discount</a>
+              <a href="shop.html" class="submenu-title">Shop by Discount</a>
             </li>
             <li class="submenu-category">
-              <a href="#" class="submenu-title">Shop All Sale</a>
+              <a href="shop.html" class="submenu-title">Shop All Sale</a>
             </li>
             <li class="submenu-category">
-              <a href="#" class="submenu-title">20% Off and up</a>
+              <a href="shop.html" class="submenu-title">20% Off and up</a>
             </li>
             <li class="submenu-category">
-              <a href="#" class="submenu-title">30% Off and up</a>
+              <a href="shop.html" class="submenu-title">30% Off and up</a>
             </li>
             <li class="submenu-category">
-              <a href="#" class="submenu-title">40% Off and up</a>
+              <a href="shop.html" class="submenu-title">40% Off and up</a>
             </li>
           </ul>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">About</a>
         </li>
 
         <li class="menu-category">
@@ -266,34 +193,144 @@
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
+          <li>
+            <a href="https://www.tiktok.com/@crooked_solee?_t=8ih6Ffw5Fdy&_r=1&fbclid=IwAR3ZwFCW7pm2G47nrJCk75XwDPZ3-ovvODfux26G_E-kvIIfS6498iSA-uU" target="blank" class="social-link">
+              <ion-icon name='logo-tiktok'></ion-icon>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
   </header>
 
-  
-  <section class="cart">
+  <section class="checkout">
       <div class="container">
-        <p class="cart-upper-text"><span>Cart</span></p>
-        <div class="cart-wrapper">
-          <div class="cart-list-container">
-            <div class="cart-heading">
-              <span>Your Cart</span>
-            </div>
-            <div class="cart-list">   
-            
-            </div>
+        <p class="checkout-upper-text"><span>Checkout</span></p>
+        <div class="checkout-wrapper">
+          <div class="checkout-list-container">
+            <form id="orderForm">
+              <div class="shipping-info">
+                <p class="shipping-heading">Shipping Address</p>
+                <div class="form-input-name">
+                  <div class="form-input floating-label">
+                    <label for="">First Name*</label>
+                    <input type="text" id="firstName" required>
+                  </div>  
+                  <div class="form-input floating-label">
+                    <label for="">Last Name*</label>
+                    <input type="text" id="lastName" required>
+                  </div>
+                </div>
+                <div class="phone-info">
+                  <div class="phone-dial-code">
+                    <span>PH +63</span>
+                  </div>
+                  <div class="form-input floating-label">
+                    <label for="">Phone Number*</label>
+                    <input type="text" id="phoneNumber" required>
+                  </div>
+                </div>
+                <div class="form-input-location">
+                  <div class="form-input floating-label">
+                    <label for="">Province*</label>
+                    <input type="text" id="province" required>
+                  </div>  
+                  <div class="form-input floating-label">
+                    <label for="">City/Municipality*</label>
+                    <input type="text" id="city" required>
+                  </div>
+                  <div class="form-input floating-label">
+                    <label for="">Barangay*</label>
+                    <input type="text" id="barangay" required>
+                  </div>
+                </div>
+                <div class="form-zip-code">
+                  <div class="form-input floating-label">
+                    <label for="">Zip Code*</label>
+                    <input type="text" id="zipCode" required>
+                  </div>
+                </div>
+                <div class="form-address-line-1">
+                  <div class="form-input">
+                    <label for="">Address Line*</label>
+                    <textarea name="" cols="10" rows="10" minlength="10" maxlength="150" id="addressLine" required></textarea>
+                  </div>
+                </div>
+                <div class="form-additional-note">
+                  <div class="form-input">
+                    <label for="">Additional Note(Optional)</label>
+                    <textarea name="" cols="30" rows="10" minlength="10" maxlength="150" id="additionalNote"></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
+
           <div class="order-summary">
             <div class="order-summary-card">
+              <span class="summary">Order Details</span>
+              <div class="order-card-container">
+                <div class="order-card">
+                  <div class="order-img">
+                    <img src="assets/img/products/product-1.jpg" alt="" width="100" height="120">
+                    <span class="order-quantity">x1</span>
+                  </div>
+                  <div class="order-card-details">
+                    <p class="order-title">Adidas Gazelle Green</p>
+                    <span class="order-size">Size: 6</span>
+                    <span class="order-price">P 260</span>
+                  </div>
+                </div>
+                <div class="order-card">
+                  <div class="order-img">
+                    <img src="assets/img/products/product-1.jpg" alt="" width="100" height="120">
+                    <span class="order-quantity">x1</span>
+                  </div>
+                  <div class="order-card-details">
+                    <p class="order-title">Adidas Gazelle Green</p>
+                    <span class="order-size">Size: 6</span>
+                    <span class="order-price">P 260</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order-summary-card">
+              <span class="summary">Payment Method</span>
+              <div class="total-summary">
+                <span class="total-text"><i class="ri-checkbox-fill"></i> Cash On Delivery</span>
+              </div>
+            </div>
+            
+            <div class="order-summary-card">
               <span class="summary">Order Summary</span>
-              <span class="total-price" id="totalPrice" style="text-align: end">P0</span>
-              <a href="checkout.html"><button class="btn" id="checkoutButton">Checkout Now</button></a>
+              <div class="total-summary">
+                <span class="total-text">Shipping Total: </span>
+                <span class="total-price shipping" id="shippingFee">P0</span>
+              </div>
+              <div class="total-summary">
+                <span class="total-text">Total Payment: </span>
+                <span class="total-price" id="totalPriceSummary">P0</span>
+              </div>
+              <button class="btn" id="placeOrder" type="submit" onclick="validateForm()">Place Order</button>
             </div>
           </div>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
+    <div class="success-modal">
+      <div class="success-card">
+          <img src="assets/img/order-success.jpg" alt="">
+          <div class="success-text">
+            <h1>Order Placed Successfully!</h1> 
+            <p>Your order will be delivered soon to your location.</p>
+          </div>
+          <a href="shop.html">
+            <button class="btn">Continue Shopping</button>
+          </a>
+        </div>
+  </div>
+
+  
 
   <footer class="footer">
     <div class="container">
@@ -406,6 +443,6 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-  <script type="module" src="./assets/js/cart.js"></script>
+  <script type="module" src="./assets/js/checkout.js"></script>
 </body>
 </html>

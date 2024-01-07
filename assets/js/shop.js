@@ -120,7 +120,7 @@ export async function updateFilteredData() {
               <a href="product-details.html?id=${id}">
                 <div class="product-img-container">
                   <div class="product-img">
-                    <img src="${img}" alt="${title}">
+                    <img src="${img}" alt="${title}" loading="lazy">
                   </div>
                 </div>
                 <div class="product-text-box">
@@ -158,6 +158,7 @@ $('input[name="search"]').on('keypress', function(event) {
       }
       updateFilteredData();
    }
+   
 });
 
 $('input[name="category"]').on('change', function (event) {
@@ -186,6 +187,17 @@ $(".product-box").on("click", function (e) {
   const productId = $(this).attr("href").split("=")[1];
 
   window.location.href = `product-details.html?id=${productId}`;
+});
+
+$("#clearFilter").on("click", function () {
+  query = "";
+  selectedCategory = null;
+  selectedColor = null;
+  selectedBrand = null;
+  selectedPrice = null;
+  $(".sidebar-label-container input:checked ~.checkmark + .sidebar-label-container input:checked ~.checkmark").css('background-color', '#ccc');
+  
+  updateFilteredData();
 });
 
 updateFilteredData();
