@@ -187,9 +187,11 @@ $(function () {
    `).join('');
     
    $('.slider').html(`
-     <div class="list" loading="eager">
-       ${itemsHTML}
-     </div>
+     <a href="shop.html">
+      <div class="list" loading="eager">
+        ${itemsHTML}
+      </div>
+     </a>
      <div class="buttons">
        <button id="prev"><</button>
        <button id="next">></button>

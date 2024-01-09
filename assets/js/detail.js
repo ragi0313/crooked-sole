@@ -139,7 +139,7 @@ $(".accordion-menu").each(function () {
              </fieldset>
            </div>
            <button type="button" class="bag-btn" id="addToCart">Add to Cart</button>
-           <button type="button" class="fav-btn">Favourite <i class="far fa-heart"></i></button>
+           <button type="button" class="fav-btn" onclick="favoriteAlert()">Favourite <i class="far fa-heart"></i></button>
            <div class="product-description">
              <p>
               ${description}
@@ -149,7 +149,6 @@ $(".accordion-menu").each(function () {
               Color Shown: ${Array.isArray(color) ? color.map((c) => c.charAt(0).toUpperCase() + c.slice(1)).join(', ') : color.charAt(0). toUpperCase() + color.slice(1)}
              </li>
              </ul>
-             <span class="modal">View Product Details</span>
              <div class="product-dropdown" >
                <h3 class="shipping-reviews-text">Free Shipping and Returns <span class="arrow"></span></h3>
                <div class="product-dropdown-items">
@@ -192,6 +191,9 @@ $(".accordion-menu").each(function () {
    }
  }
 
+ $(document).on('click', '.fav-btn', function() {
+   alert('Added to favorites!');
+});
 
 displayProductDetails();
 
